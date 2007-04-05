@@ -18,7 +18,7 @@ use FindBin;
 use Carp;
 
 my $DEBUG = 0;
-my $Id = '$Id: pdfcheck.pl 204 2007-04-04 13:21:16Z rose $';
+my $Id = '$Id$';
 
 local $| = 1; # unbuffered STDOUT
 local $/ = ""; # slurp input in one go
@@ -658,7 +658,7 @@ sub patch_reportfile {
 		logit( "WARNING - patch script '$patchscript' not readable, skipping ...\n" );
 		return 1;
 	}
-	my @pcmd = -x $patchscript ? ( $patchscript, $file ) : ( $conf->{shell} || $^X, $patchscript, $file );
+	my @pcmd = -x $patchscript ? ( $patchscript, $file, $conf->{reportlang} ) : ( $conf->{shell} || $^X, $patchscript, $file, $conf->{reportlang} );
 	logit( "INFO - transforming text report '@pcmd'" );
 	system( @pcmd ) && logit( "WARNING - perl '$patchscript' '$file' return with errors" );
 	return $? >> 8;
@@ -946,6 +946,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 =head1 VERSION
 
-	$Id: pdfcheck.pl 204 2007-04-04 13:21:16Z rose $
+	$Id$
 
 =cut
