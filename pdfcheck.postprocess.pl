@@ -2,7 +2,7 @@
 use strict;
 use Getopt::Std;
 
-my $Id = '$Id: pdfcheck.postprocess.pl 127 2006-09-28 06:47:58Z rose $';
+my $Id = '$Id$';
 
 chomp( my $heliosdir = do { local( @ARGV, $_ ) = "/etc/HELIOSInstallPath"; <> } );
 die "FATAL - heliosdir '$heliosdir' does not exist\n" unless -d $heliosdir;
@@ -22,7 +22,7 @@ __END__
 
 =head1 VERSIONS
 
-	$Id: pdfcheck.postprocess.pl 127 2006-09-28 06:47:58Z rose $
+	$Id$
 
 =cut
 
