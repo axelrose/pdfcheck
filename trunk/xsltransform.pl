@@ -2,7 +2,7 @@
 
 use FindBin;
 
-my $Id = '$Id: xsltransform.pl 180 2006-12-07 14:49:00Z rose $';
+my $Id = '$Id$';
 
 my $file = shift || die "no input, no output";
 my $lang = shift || "de"; # default language = de
