@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>kMDItemAuthors</key>
+	<array>
+		<string>Peter Kleinheider</string>
+		<string>Stephan Jaeggi</string>
+	</array>
+	<key>kMDItemCopyright</key>
+	<string>by Peter Kleinheider</string>
+	<key>kMDItemOrganizations</key>
+	<array>
+		<string>callas software GmbH</string>
+		<string>inpetto</string>
+		<string>PDFX-Ready</string>
+		<string>PPC</string>
+	</array>
+	<key>kMDItemSubject</key>
+	<string>Prüfprofildefinition</string>
+	<key>kMDItemVersion</key>
+	<string>1.0 (Profile Version 24)</string>
+</dict>
+</plist>

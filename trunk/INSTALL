@@ -1,0 +1,300 @@
+(english version follows below)
+
+Installationsanleitung "pdfcheck.pl"
+--------------------------------------------------------------------------------
+
+1. Skripte auf dem Server installieren
+
+beispielsweise in /usr/local/helios/var/settings/Meine Skripte/
+
+Alle Skripte mpssen im gleichen Verzeichnis liegen. "xslt" ist
+ein Unterordner im ausgewählten Skripte Verzeichnis.
+
+unbedingt notwendig sind:
+
+- pdfcheck.pl (Hauptskript zur Wandlung/Prüfung)
+- pdfcheck.conf.pl (Konfiguration von "pdfcheck.pl")
+
+optional in das gleiche Verzeichnis installierbar:
+
+- patch-txtreport.pl (nimmt textuelle Korrekturen in Text Reports vor)
+- xsltransform.pl (ruft "xsltproc" zur Wandlung eines XML Reports nach
+  z.B. HTML auf)
+- pdfcheck.postprocess.pl (zur Programmierung einer eigenen Nachbehandlung
+  des Ergebnisses nach Beendigung von "pdfcheck.pl")
+
+Die optionalen Skripte werden in der Konfigurationsdatei "pdfcheck.conf.pl"
+aktiviert.
+
+Die mitgelieferte Beispiel Konfigurationsdatei "my.conf.pl" kann benutzt
+werden, um Hotfolder spezifische Konfigurationsanpassungen vorzunehmen.
+Dazu braucht diese Datei oder irgendeine andere mit der Endung ".conf.pl"
+nur in den überwachten Eingabeordner kopiert zu werden.
+
+ 
+2. Eingabe CreatePDF Queue und/oder Hotfolder einrichten
+
+2.1 CreatePDF Queue
+
+Neben den üblichen CreatePDF Einstellungen ist wichtig:
+Benachrichtigungsprogramm = pdfcheck.pl
+PDF Preflight Profil = passendes Profile aus Acrobat Preflight
+Wird das Profil ausgelassen, gelten die Auswahlregeln unter 5.
+
+Bitte bei den Distiller-Einstellungen vermeiden, daß der Distiller
+bereits eine PDF/X-3 erzeugt (kann pdfInspektor3 selber).
+pdfInspektor3 bis Version 192 bricht bei der erneuten X-3 Wandlung
+einer X-3 PDF unerwartet ab.
+
+Benutzerverzeichnisse können verwendet werden. Diese werden als Eingabeordner
+angesehen und die Ausgabe erfolgt dann ohne weitere Konfiguration in die
+konfigurierten Unterverzeichnisse dieser Ordner, siehe auch die
+Option  'userdirout'.
+
+2.2 Hotfolder
+
+Ab HELIOS Admin mit Update u0552 werden bei der Konfiguration des Skriptes
+Vorgabe Werte eingesetzt. Angepaßt werden muß dann der aktive Ordner und evt.
+die Umgebungsvariable PDF_PROFILE. Wichtig ist der Timeout Wert von 0, weil
+bei größeren PDF Dateien HELIOS die Skriptverabeitung unter Umständen zu früh
+stoppt und dem Skript keine weiteren Eingriffsmöglichkeiten mehr gibt. Wird
+PDF_PROFILE nicht vorgegeben, gilt die Profilauswahlregel unten unter 4.
+
+Die Zeitvorgabe (timeout) sollte auf 0 gesetzt werden, da die Prüfung durchaus
+länger als der Standardwert 120 Sekunden dauern kann.
+
+In älteren HELIOS Versionen einen Eintrag in "scriptsrv.conf" vornehmen.
+
+Beispiel:
+
+PDF ::/esvols/pdf/X3/Of-PT12/IN:var/settings/Meine Skripte/pdfcheck.pl:root:PDF_PROFILE=/usr/local/helios/var/spool/qmeta/x3-of-pt12/PDF_PROFILE
+
+Anstelle eines absoluten Pfades kann ein relativer Pfad eingesetzt werden,
+der beginnend ab HELIOSDIR/var/settings/PDF Preflight ausgewertet wird.
+
+(Bei EtherShare 4th sollte evt. das erste Feld "PDF " durch "\0\0\0\0", also
+eine Wildcard-Registrierung, ersetzt werden, da der scriptsrv dort keine 
+PDF-Dateien ohne passenden Filetype "PDF " als PDF-Dateien akzeptiert, was
+aber seit MacOS X immer häufiger der Fall sein dürfte.)
+
+3. Konfiguration anpassen
+
+Die meisten Einstellungen sollten über die Kommentare in "pdfcheck.conf.pl"
+verständlich sein.
+
+Der Text-Report kann komplett ausgelassen werden, indem einfach kein
+Stil dafür in der Option 'reportstyletxt' festgelegt wird. Für HTML-Reports
+muß der Textreport als XML erzeugt werden, siehe 5. unten.
+
+Die syntaktische Richtigkeit der Konfigurationsdatei kann man mit:
+
+  $ perl -c pdfcheck.conf.pl
+
+prüfen, d.h. die Konfiguration muß in sich gültiger Perl-Code sein.
+
+EtherShare 4th ist ausreichend, wenn man entweder eine eigene Version des
+pdfInspektor3CLI besitzt oder über SSH pdfInspektor3 auf einer anderen
+Maschine im Netzwerk aufruft.
+
+
+4. Profil-Auswahl
+
+Das pdfInspektor-Profil wird in folgender Reihenfolge gesucht:
+
+I)
+PDF_PROFILE Datei im HELIOSDIR/var/spool/qmeta/<myqueue> Verzeichnis
+(durch Einstellung des "PDF Preflight Profil" in HELIOS Admin für eine
+CreatePDF Queue)
+bzw. die Datei, auf die die Umgebungsvariable PDF_PROFILE bei Skripten
+zeigt
+
+II)
+.kfp Datei im überwachten Ordner oder dessen Überordner
+(die erste in diesen Ordnern gefundene Datei wird benutzt)
+
+III)
+Ableitung aus einem definiertem Bestandteil des Dateinamens und
+der Referenztabelle dazu in der Konfigurationsdatei (siehe Optionen
+'profileext1', 'profileext2' und 'extlookup')
+
+IV)
+etwaiges Defaultprofil in der Konfigurationsdatei pdfcheck.conf.pl
+(siehe 'defaultprofile')
+
+Das zuerst gefunde Profil findet Verwendung. Kann kein Profil bestimmt
+werden, bricht der gesamte pdfcheck Prozeß ab.
+
+PDF/X-3 Erzeugungsprofile dürfen nicht auf PDF/X-3 Kriterien prüfen.
+
+Prüfregeln, die mit Fehler enden, führen zum Abbruch der PDF/X-3 Erzeugung.
+
+
+5. XML Reports nach HTML wandeln
+(prinzipiell sind neben HTML auch andere Formate möglich)
+
+Die Umwandlung wird vom mitgelieferten Skript "xsltransform.pl" durchgeführt.
+Dieses muß im gleichen Pfad wie "pdfcheck.pl" selber liegen. Es ruft
+seinerseits das Programm "xsltproc" auf, daß auf dem Hostrechner installiert
+sein muß und über $PATH erreichbar sein muß.
+
+Notwendige Konfiguationen in "pdfcheck.conf.pl":
+
+# immer eine XML Datei, um auch bei Erfolg eine HTML bereitzustellen
+reportstyletxt => 'XML,ALWAYS,SHORT,PAGEINFO,DOCRSRC',
+# Text Patch erledigt die Transformation der XML Datei
+txtpatchscript => 'xsltransform.pl',
+
+"xsltransform.pl" startet mit der XSL Datei "pdfinsp.xsl", die im
+Unterverzeichnis "xslt" des aktuellen Skriptverzeichnis liegen muß.
+
+================================================================================
+
+Installation of "pdfcheck.pl"
+--------------------------------------------------------------------------------
+
+1. Copy scripts onto your Helios server
+
+e.g. into /usr/local/helios/var/settings/my scripts/
+
+All scripts have to go into the same directory. "xslt" must be a subdiretory
+within the chosen scripts folder.
+
+essential are these:
+
+- pdfcheck.pl (main script for conversion/checks)
+- pdfcheck.conf.pl (configuration for "pdfcheck.pl")
+
+optionally into the same directory:
+
+- patch-txtreport.pl (executes textual corrections to the text report)
+- xsltransform.pl (calls "xsltproc" for transformation of the XML report
+  to e.g. HTML)
+- pdfcheck.postprocess.pl (you may program your own processing after
+  "pdfcheck.pl" has finished its task)
+
+The optional scripts are activated within the configuration file
+"pdfcheck.conf.pl".
+
+You may use the supplied "my.conf.pl" file to have hotfolder specific
+configurations. Simply copy this file or any other file with the suffix
+".conf.pl" into the watched input folder.
+
+2. Make a CreatePDF queue and/or a hotfolder
+
+2.1 CreatePDF queue
+
+Besides the usual CreatePDF configuations it is important to choose:
+Notify Program = pdfcheck.pl
+PDF Preflight Profile = Preflight profile exported from Acrobat
+If no profile is selected the rules in section 4. apply.
+
+Please avoid a Distiller setup which creates PDF/X-3 (this is better
+done by pdfInspektor3). pdfInspektor3 up to version 192 terminates
+if a PDF/X-3 file is again converted to a PDF/X-3 file.
+
+It is possible to have user folders activated. They are considered
+input folders and output goes without further configuration into
+the specified out/err/warn/copy subdirs within the user folders.
+Please see option 'userdirout' within "pdfcheck.conf.pl" for
+differing schemes.
+
+2.2 Hotfolder
+
+HELIOS Admin with update u0552 will insert default values for
+a new script. You should adapt the hot folder path and possibly
+the environment variable PDF_PROFILE. If you don't set PDF_PROFILE
+the rules in section 4 apply (see below).
+Please use a timeout value of 0.
+
+For older version of Helios you have to edit "scriptsrv.conf".
+
+Example:
+
+PDF ::/esvols/pdf/X3/Of-PT12/IN:var/settings/my scripts/pdfcheck.pl:root:PDF_PROFILE=/usr/local/helios/var/spool/qmeta/x3-of-pt12/PDF_PROFILE
+
+Instead of an absolute path to the preflight profile you might choose
+a relative path which starts at HELIOSDIR/var/settings/PDF Preflight.
+
+(With Ethershare 4th the field "PDF " should be substituted by
+"\0\0\0\0" - a wildcard registration - because this version of
+scriptsrv doesn't accept PDF files without the proper file type
+"PDF " which is more common with MacOS X.)
+
+
+3. Configuration check
+
+Most settings should be comprehensible through the comments made within
+"pdfcheck.conf.pl".
+
+You may leave out a text report by just having an empty style definition
+for 'reportstyletxt' but for HTML report a text report with XML style
+is needed, see section 5 below.
+
+After changing the configuration you may validate the syntax with
+
+  $ perl -c pdfcheck.conf.pl
+
+i.e. the configuration file must be valid Perl code.
+
+Ethershare 4th is sufficient if you have your own installation of
+pdfInspektor3CLI or if you use pdfInspektor3 through SSH on a
+different host in your network.
+
+
+4. Profile selection
+
+The pdfInspektor profile is searched in this order:
+
+I)
+PDF_PROFILE file within HELIOSDIR/var/spool/qmeta/<myqueue>/
+(set up by choosing a profile for "PDF Preflight Profile" in
+Helios Admin for a CreatePDF queue)
+or the file the environment variable PDF_PROFILE for scripts
+points to
+
+II)
+.kfp file in watched folders or their parent folders
+(the first file found there is used)
+
+III)
+Deduction from a defined part of the print filename and a lookup
+table in the configuration file (see 'profileext1', 'profileext2'
+and 'extlookup')
+
+IV)
+a default profile from the configuration file (see 'defaultprofile')
+
+The first found profile will be used. If none can be found the whole
+pdfcheck process terminates.
+
+Profiles which create PDF/X-3 may not check for PDF/X-3 criterias.
+
+Rules leading to errors stop the creation of PDF/X-3.
+
+
+5. Transform XML reports to HTML (other formats besides HTML are
+always possible)
+
+The transformation is done by the included script "xsltransform.pl".
+This script must be located in the same path as "pdfcheck.pl".
+It calls the program "xsltproc" which you must install yourself.
+Some systems come with it already. "xsltproc" must be reachable
+through $PATH otherwise please change "xsltransform.pl" yourself.
+
+Necessary configuration in "pdfcheck.conf.pl":
+
+# ALWAYS to be able to provide a HTML also for successful checks
+reportxtyletxt => 'XML,ALWAYS,SHORT,PAGEINFOR,DOCRSRC',
+# text patch script cares for transformation
+txtpatchscript => 'xsltransform.pl',
+
+"xsltransform.pl" starts with the XSL file "pdfinsp.xsl" which
+needs to be located with a subdiretory "xslt" of the script file
+itself.
+
+
+################################################################################
+#                                                                              #
+# Version: $Id: INSTALL 205 2007-04-04 13:21:34Z rose $                        #
+#                                                                              #
+################################################################################

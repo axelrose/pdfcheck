@@ -1,0 +1,2792 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pdfpreflight version="3.0">
+	<package>
+		<id3>0f9c60d8785d72c6eb978e1cce3e3601</id3>
+		<pdfxoutintentlist>
+		</pdfxoutintentlist>
+		<conditions>
+			<condition>
+				<id1>C986132064ad731b76c8904cd5966aa41</id1>
+				<id2>Ce809f50743c95134052d621dcc52d0bf</id2>
+				<id3>48ee52111ac216f46997b4d96f3f1801</id3>
+				<id4>b970228e12bc6b2d0698561b879918b8</id4>
+				<name>Diese Seite ist ein separierter Farbauszug</name>
+				<comment>Diese Seite ist ein separierter Farbauszug</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::PAGE</group>
+					<token>PAGE::HasSeparationInfo</token>
+					<operator>OP::is_embedded</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cbb89ebacf227987aecf7a33dfcd9a228</id1>
+				<id2>Cb0aea1b4b8c6f1e97e2d4d927cb59121</id2>
+				<id3>e5a205255691c455596bb84b01f2758d</id3>
+				<id4>9c6b8586a4dc6afeea254932b507875c</id4>
+				<name>Mit PDFWriter erzeugt</name>
+				<comment>PDFWriter ist ein als Druckertreiber konstruierter PDF-Konverter. Er ist für die Verwendung im Büroumfeld geeignet und häufig schneller und leichter zu bedienen als Acrobat Distiller. Allerdings erzeugt PDFWriter PDF-Dateien, die für die Druckvorstufe nicht geeignet sind.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::DOC</group>
+					<token>DOC::CreatedWithPDFWriter</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C61e391fff04d072c0a7ce86f0639413c</id1>
+				<id2>C568e5cd8c4c3e170fd814e1b49df09cb</id2>
+				<id3>3b1c04f302fdb45e1fb23250118679b0</id3>
+				<id4>b9d9b16f14821108409bc907f5371c88</id4>
+				<name>Diese Seite ist LZW-komprimiert</name>
+				<comment>Diese Seite ist LZW-komprimiert</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::PAGE</group>
+					<token>PAGE::ContentsStreamCompression</token>
+					<operator>OP::contains</operator>
+					<data>
+						<text>
+							<value>LZW</value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C638d0ef269374068ba7f3bd1b48b3823</id1>
+				<id2>Cef88e35e7ff1f9045e7e6b154eb4052c</id2>
+				<id3>04d6143cb777e58b555a1e72708fa1b8</id3>
+				<id4>2282e7161f7118b0b9589a6e70df09b6</id4>
+				<name>Acrobat-Formularelement innerhalb der Seite</name>
+				<comment>Prüft ob Formularelemente sich (ganz oder teilweise) innerhalb der durch BleedBox (Endformat der Seite zuzüglich Beschnittzugabe) oder TrimBox (Endformat der Seite) definierten Bereiche befinden. Die Familie der ISO 15930-Standards - bekannt als PDF/X - verbietet Formularelemente innerhalb dieser Bereiche.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::ACROFORM</group>
+					<token>ACROFORM::InsideBleedOrTrimBox</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C9c9c8d08fec75a9b06d9952f69c7824d</id1>
+				<id2>Cc5663891616fba026ba3abc9fd35d283</id2>
+				<id3>df8f50baf49fb77db04d14466d3fd4cc</id3>
+				<id4>c9725ebdda2ba8b26957266e76221e18</id4>
+				<name>Alternativbild auf druckend gesetzt</name>
+				<comment>Ein Alternativbild (alternate image) für ein Bild ist an Stelle des Bildes selbst auf druckend gesetzt.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::ALTIsDefaultForPrinting</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C11e991f61b2fe956e6787824f7f08ba8</id1>
+				<id2>Cffdc10f6514e85c4c64ab47506069a29</id2>
+				<id3>baf4b49e4975c05037052c329d837a04</id3>
+				<id4>e3c6e10ee9f5d0b8f6b74a2a07702264</id4>
+				<name>Dokument enthält Aktionen</name>
+				<comment>Aktionen können sowohl mächtig als auch gefährlich sein - insbesondere mit den weitreichenden JavaScript-Möglichkeiten in Acrobat. Es ist oft hilfreich zu erkennen, ob Aktionen in einem PDF-Dokument vorhanden sind.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::DOC</group>
+					<token>DOC::HasActions</token>
+					<operator>OP::is_embedded</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C392b18cebab76d86c2fba33c61d1f084</id1>
+				<id2>Cb8d19fad046dcf6b63ba0014f40dae94</id2>
+				<id3>920232d1426700927bfbe17975269984</id3>
+				<id4>8c3056aa5539c26912a3b8a583cf5a92</id4>
+				<name>Dokument enthält JavaScript</name>
+				<comment>Obwohl JavaScript in PDF-Dokumenten sehr nützlich sein kann, empfiehlt es sich für die Verarbeitung in der Druckvorstufe, JavaScript in PDF-Dokumenten zu vermeiden.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::DOC</group>
+					<token>DOC::HasJavaScripts</token>
+					<operator>OP::is_embedded</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Ce8431e23a96fbfeaf973699664c0dc03</id1>
+				<id2>Ca90d248c3a81f6139c647c1e1750379e</id2>
+				<id3>9051d60f7e22f95da6495a6027cc7466</id3>
+				<id4>7324fc05ce5d5c2f1e53b831e5dcad2a</id4>
+				<name>Flächendeckung oberhalb 280% (Füllung)</name>
+				<comment>Objekte mit einer Flächendeckung oberhalb 280% können im Druck Probleme verursachen.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_F</group>
+					<token>CSGST_F::TotalAmountOfInk</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>280</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C33dbb375cc68a9dc9abd91a9459a9b24</id1>
+				<id2>C8c05ecded41647e202070502fbd58ea7</id2>
+				<id3>8741378e88976f2788be821e41eee760</id3>
+				<id4>f9bad3ca91f3e98016d8e1bcb1a90fb2</id4>
+				<name>Objekt ist ein Text</name>
+				<comment>Ermittelt TextObjekte</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CONTSTM</group>
+					<token>CONTSTM::IsText</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C8e443e2638b57d76377ac8c41ba5028a</id1>
+				<id2>Cd2104dd7ed631ebc72fd7cdaa04cb6c1</id2>
+				<id3>afdedceb9ee7cd2b3cefc6debc37669a</id3>
+				<id4>63f20c62d99180ed56ef0fe45bfc7053</id4>
+				<name>CC_ObjectUses85</name>
+				<comment>CC_ObjectUses85</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::ObjectUsesBlackWithAPercenOf</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>85</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C97338d6f272f7f31aa9fa14358d8fc86</id1>
+				<id2>C936758f9a12dc9bca712b7410a658632</id2>
+				<id3>dc81c287151114227dc30da9fbd34aa0</id3>
+				<id4>29e0d19d7e8b6fe006a42252cdbcf4f4</id4>
+				<name>Objekt innerhalb der TrimBox</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CONTSTM</group>
+					<token>CONTSTM::ObjectIsOutsidTrimBoAndArtBox</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C04fd2e0fd6bd1a9464855363fd016cfc</id1>
+				<id2>Cd21a05e2431e18e3599f08d48c2edef8</id2>
+				<id3>14fde7b709beff170a762ac8418040e9</id3>
+				<id4>ba28e973ff5e861133d3c9c0741598d1</id4>
+				<name>Farbe ist nicht 400CMYK (Füllung)</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_F</group>
+					<token>CSGST_F::TotalAmountOfInk</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>400</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cb3f9e89ecdbb49f9e7330e57ca12f4f8</id1>
+				<id2>Cf2874a29904442aba4c4f9a58af64c85</id2>
+				<id3>0f271a005fb84ff771cef6052b51eb04</id3>
+				<id4>9a4ee85a49a8481b6c10c20e45766fbd</id4>
+				<name>Farbe ist 400CMYK (Füllung)</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_F</group>
+					<token>CSGST_F::TotalAmountOfInk</token>
+					<operator>OP::equal</operator>
+					<data>
+						<num>
+							<value>400</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C29b0ba62471b05bcb1c26c8a6b211e8a</id1>
+				<id2>Cba3caa1ead3e20a9d1a4bb8a0a73550c</id2>
+				<id3>d7b07ae55bed79e865dd2c2d9e74cf20</id3>
+				<id4>3df35ed433f0e92d82870bc36d2c4ed6</id4>
+				<name>Text ist kleiner als 6 pt</name>
+				<comment>Text ist kleiner als 6 pt</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSTEXT</group>
+					<token>CSTEXT::Textsize</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>6</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cf34bb644aa71c1c55253cfe91ebd8796</id1>
+				<id2>Cb8f52296d5a6895ee8727eff0f0fa26a</id2>
+				<id3>06f8ff01d7bcacee72953c5305d06087</id3>
+				<id4>b8c170b1e4794adeba1d4fe964c3cb90</id4>
+				<name>Flächendeckung kleiner 90% (Füllung)</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_F</group>
+					<token>CSGST_F::TotalAmountOfInk</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>90</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C378b6709f1d2b79b9664a6be3cf5ad4f</id1>
+				<id2>C7b773729017e2d8d00839b5a70a9086f</id2>
+				<id3>427269adff61c5fa0abcb3bb2ea04c98</id3>
+				<id4>2c84412e9d94e6d2c4e56a9b4dd88146</id4>
+				<name>CC_ObjectIsNotWhite</name>
+				<comment>CC_ObjectIsNotWhite</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::ObjectIsWhite</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C09e5b9f480479cecfcf0b2aa272fa4e8</id1>
+				<id2>C6b64731fde25ba3caa273daa569b6ad0</id2>
+				<id3>19839aed9913b7740517c732ae967332</id3>
+				<id4>ef6d5b9251e5cb0d8131216162be9223</id4>
+				<name>Linienstärke unter 0.25 pt</name>
+				<comment>Die Linienstärke beträgt weniger als 0.25 pt</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_S</group>
+					<token>CSGST_S::LineWidth</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>0.25</value>
+							<tolerance>.01</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C936d1f5c7f815ec2a53dc7abe5fa575c</id1>
+				<id2>Ca08683273f0194747f818ae14b0cd4cb</id2>
+				<id3>6877b3248b7e1f9f3d991349268aebc7</id3>
+				<id4>f54cae0a30cd259db7b94c6f9581fc0e</id4>
+				<name>CC_ObjectIsInsideTrimboxOrBleedbox</name>
+				<comment>CC_ObjectIsInsideTrimboxOrBleedbox</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CONTSTM</group>
+					<token>CONTSTM::ObjectIsOutsidBleedBox</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C86021870da828dd96e4ab137897ddcab</id1>
+				<id2>Caf6796dfaf9590083962cf83d7932c48</id2>
+				<id3>abffde2dacd632586ed07ed1b97c7505</id3>
+				<id4>d7328dadc7bc3a0d51204ac7868f60cb</id4>
+				<name>Mehr als eine Farbkomponente</name>
+				<comment>Ermittelt, ob der aktuelle Farbraum mehr als eine Farbkomponente verwendet.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::NumberOfNonZeroComponents</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>1</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C0c18f8a68985c6e29777ec112d66e080</id1>
+				<id2>C8b63d9a0fd1ee1df9a23af7de4657f0d</id2>
+				<id3>cdc9fef5275db2d851e8d4095c643033</id3>
+				<id4>3d74652d0162fc584c160dc44d7f26df</id4>
+				<name>Text ist kleiner als 4 pt</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSTEXT</group>
+					<token>CSTEXT::Textsize</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>4</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C7212a21dae0081b6d65998a6f7385e85</id1>
+				<id2>C67b51ea43ad494a724bea0c41f1a63c2</id2>
+				<id3>d45aac62e10ca9b3e0c2bc7811441cb4</id3>
+				<id4>c031fd2b3ef17f82bbfe6fa27ae3a68a</id4>
+				<name>Flächendeckung kleiner 90% (Linie)</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_S</group>
+					<token>CSGST_S::TotalAmountOfInk</token>
+					<operator>OP::less_or_equal</operator>
+					<data>
+						<num>
+							<value>90</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C1fceafa94df978f87940c0d08f97aa70</id1>
+				<id2>Cc25ec6c22f5236b865332faae3d73a9c</id2>
+				<id3>c5d4d0b2fd99c192a3cdc314cb764766</id3>
+				<id4>e117b16b88ae36c5ed741d15cad243a4</id4>
+				<name>Seite gestürzt</name>
+				<comment>Seite ist gedreht</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::PAGE</group>
+					<token>PAGE::Rotation_degrees</token>
+					<operator>OP::unequal</operator>
+					<data>
+						<num>
+							<value>0</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cbaaa26f9f482f3eee2351e7b3c041372</id1>
+				<id2>C0db41a3431156b35e52606847fba0e14</id2>
+				<id3>5c3b5f5d843af72d67a84f6e7ff32b56</id3>
+				<id4>edb44529c6a9ed53fdfc2bc457b78b60</id4>
+				<name>CC_TextUsesCourier</name>
+				<comment>CC_TextUsesCourier</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSFONT</group>
+					<token>CSFONT::BaseFontName</token>
+					<operator>OP::contains</operator>
+					<data>
+						<text>
+							<value>Courier</value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C9ef4d72f47ec42f647913dab270ece91</id1>
+				<id2>C483941d40016aeff9dfe469be265cde5</id2>
+				<id3>a45b1ad98660fc4206f769b5426f2e84</id3>
+				<id4>7fba4ffec1653c85ea7f22eb8eaaa360</id4>
+				<name>! Objekt innerhalb Endformat (TrimBox)</name>
+				<comment>Objekt ist innerhalb TrimBox (beschnittenes Endformat).</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CONTSTM</group>
+					<token>CONTSTM::ObjectIsInsideTrimBoAndArtBox</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C48ced7da6f49f8ada14e6f6dbfb2cabc</id1>
+				<id2>C6e9fe7f96117dacbe195710187cef3be</id2>
+				<id3>196c70c293c78afdeea6a9f396e6d259</id3>
+				<id4>402d6d227d19362576afa08c949b2f7f</id4>
+				<name>CSCOLOR_isSpotColor</name>
+				<comment>CSCOLOR_isSpotColor</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::isSpotColor</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C99060c08263f40ba5c960e1b4e7950a7</id1>
+				<id2>C496cea312744a9fd797d15896996dbac</id2>
+				<id3>db757da705fc80b74f935b9262d8d712</id3>
+				<id4>ae9a5afc0fb9fa325adcf559cd892617</id4>
+				<name>Is not register color</name>
+				<comment>Objekt verwendet keine Registerfarbe. Als Registerfarbe (Separationsfarbe &quot;All&quot;) bezeichnet man diejenige Farbdefinition, die auf allen Farbauszügen ausgegeben wird, ohne jedoch selbst einen Farbauszug zu erzeugen.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::isRegistrationColor</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C168e5b17a1567de43018fa4fb9b3119e</id1>
+				<id2>C44e819cb9388c10d75771c3fcc8bc75a</id2>
+				<id3>ae472593bab62b6408386e1df1bd638b</id3>
+				<id4>f81c85d91d9984148d3b50e48fe9daa8</id4>
+				<name>CMYK als DeviceN definiert</name>
+				<comment>Prozessfarben sind als DeviceN angelegt. Diese werden bei Farbkonvertierung meist nicht berücksichtigt.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::hasProcessColorsAsDeviceN</token>
+					<operator>OP::is_embedded</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Ccbd8260ae0c4051d367184466495b63e</id1>
+				<id2>C5e07847e65bc3df005493efcc2ad5cd7</id2>
+				<id3>9efa11a4cb2a42c0a9ee620572eb9f5c</id3>
+				<id4>36b1d5cfb1358b05106fd88bfcdfe3e7</id4>
+				<name>Mehr als 1 Farbkanal</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::NrOfComponents</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>1</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cde6f3281e2ed4135dd98c684d53fb7e6</id1>
+				<id2>C2101eff1dd23ba2ffd3f1137f74331ca</id2>
+				<id3>3521fe7f552fa6eb84925f283959b0db</id3>
+				<id4>4391003dc547e6f38b4f8eb282d8d6a7</id4>
+				<name>Ausgabeintent definiert</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::OUTINTENTS</group>
+					<token>OUTINTENTS::NumberOfOutputEntries</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>0</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C28feafd8931c2b08903565bafb431a3a</id1>
+				<id2>C5f024fea9c7629cc330fbd0e5058f0a0</id2>
+				<id3>c143505599f127509fd9cdc43b68fe0e</id3>
+				<id4>818307ffc60ab6cc4fe4620a17e5bfaf</id4>
+				<name>CC_SuffixForSpotColorNameNotC</name>
+				<comment>CC_SuffixForSpotColorNameNotC</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::SpotColorName</token>
+					<operator>OP::not_ends</operator>
+					<data>
+						<text>
+							<value>C</value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cc66525fbf826674f6b508477a9abce75</id1>
+				<id2>C39b4525ebaa7f87b16e78cd41076c338</id2>
+				<id3>acfcb7e04e36932560591c187487feda</id3>
+				<id4>9496eb594c5eabb6b3cbaea8bcb81af4</id4>
+				<name>! Schmuckfarbe ist Pantone</name>
+				<comment>Verwendung einer Pantone-Schmuckfarbe.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::SpotColorName</token>
+					<operator>OP::begins</operator>
+					<data>
+						<text>
+							<value>Pantone</value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cfdc8ff0415653e2ccd04c29475acd88f</id1>
+				<id2>C2d153d1ef62ad84d73d52288c6a18387</id2>
+				<id3>ee9d71f53b73a490d7cc07a47e6e2f00</id3>
+				<id4>15a44787cde99a4f4daaf9ab26d06730</id4>
+				<name>CC_MultipleMasterFontUsed</name>
+				<comment>CC_MultipleMasterFontUsed</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSFONT</group>
+					<token>CSFONT::FontTypeIsMultipMasterType1</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C727e045252706a8b4a4b32c708d469e9</id1>
+				<id2>C3f340f90fb39711ce007d0ba1ccae04a</id2>
+				<id3>90888a27eef1969ee3d6e5082003b29f</id3>
+				<id4>21d6aa3e7804aca74208ec4404a396f5</id4>
+				<name>!! Alternate color space not CMYK or Gray</name>
+				<comment>Alternate color space are used for display of spot colors and DeviceN colors in Acrobat and are also be used to convert a spot color and DeviceN color to process color.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::AltBaseColorSpaceName</token>
+					<operator>OP::not_is_include</operator>
+					<data>
+						<text>
+							<value>DeviceGray DeviceCMYK</value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C4f91caf6731e1cf25155588d5aea3c23</id1>
+				<id2>C406570b311f93ac839680b3e00c0afcc</id2>
+				<id3>0dd1584f783185a75e0b95d02f2b1b50</id3>
+				<id4>a54d5052982ad1c020ef7cff8c2e282e</id4>
+				<name>CC_AppearanceOfSpotColorInconsistent</name>
+				<comment>CC_AppearanceOfSpotColorInconsistent</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::DOC</group>
+					<token>DOC::SpotColorRepresAreInconsisten</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C996393572d5b0ce0d83b0aa9ccb713af</id1>
+				<id2>C9f2139e132f72e11dffcdc5cd7284668</id2>
+				<id3>14a2275253b3b32c12e3badb6bf4f955</id3>
+				<id4>8a242b60775c6fc8c832269abc07a6b4</id4>
+				<name>CC_PageHasCropboxDefinedExplicitly</name>
+				<comment>CC_PageHasCropboxDefinedExplicitly</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::PAGE</group>
+					<token>PAGE::HasCropBox</token>
+					<operator>OP::is_embedded</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Ca202a3259d20f74f7d6beb2dffc44aa1</id1>
+				<id2>C2b628136cb43e9809fcba27b46463965</id2>
+				<id3>303ca9b2a0ae03db738b063e60141f5d</id3>
+				<id4>7736c636ddb80f0c7afb4b6bf7211fa0</id4>
+				<name>CC_CropboxNotEqualMediabox</name>
+				<comment>CC_CropboxNotEqualMediabox</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::PAGE</group>
+					<token>PAGE::CropBoIsSameAsMediaBox</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C488fc7a1fff13ea651b42915726176b1</id1>
+				<id2>Ced7653908461a1253b207ae2087a1569</id2>
+				<id3>dd468c0dfb8b2e4681fb7a93ae30d325</id3>
+				<id4>f3ff96c513c61eca19854c71db3e42b6</id4>
+				<name>CC_UsesScalingFactor</name>
+				<comment>CC_UsesScalingFactor</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::PAGE</group>
+					<token>PAGE::PageIsScaled</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C35a8c981fc905800a3661e3cf73feb67</id1>
+				<id2>Cc7b4d42f1a5c3f2c8d475f205c3d22a3</id2>
+				<id3>94ab4f616d1cc8ca676040fa2f651050</id3>
+				<id4>b77948c47cb7806b8bd1fb2335bff372</id4>
+				<name>! NChannel-Farbe verwendet</name>
+				<comment>Verwendet NChannel-Farbe (erst ab PDF 1.6)</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::UsesNChannColor</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cd08e337ea2bc2a19025943b136ae0b51</id1>
+				<id2>Cddfb684497b6c8580efef9c21ff06e9d</id2>
+				<id3>3da76ab5f6dd7a907e72cb0249f23aeb</id3>
+				<id4>de2c6318b46c2ee55a58965554ebb19a</id4>
+				<name>Seitenrahmen inkorrekt geschachtelt</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::PAGE</group>
+					<token>PAGE::BoxesNestedProperly</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C49743aacc5f0451d1903cf0dc2e34607</id1>
+				<id2>C16d174eff4837f202bc7409cb816d019</id2>
+				<id3>47962ab02cfc636266c34a1504ef3683</id3>
+				<id4>60cad6155b622af9c25061deb2682f87</id4>
+				<name>Seite enthällt entweder TrimBox oder ArtBox</name>
+				<comment>Für einen möglichst eindeutigen Dateiaustausch ist die Verwendung der TrimBox vor der ArtBox vorzuziehen, um den Bereich der Seite anzugeben, der für die Druckausgabe vorgesehen ist.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::PAGE</group>
+					<token>PAGE::EitherTrimBoxOrArtBox</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C36c5afec8f7e630cdfb48380ca7a589e</id1>
+				<id2>C7999f654feee500d4193980c3a90f4f6</id2>
+				<id3>58a77a791e3493eb09b2be4d244bbb59</id3>
+				<id4>2621f5ac340757aea2f8b38917c3f3c6</id4>
+				<name>! Registerfarbe verwendet</name>
+				<comment>Die Registerfarbe (meistens &quot;All&quot; genannt) wird normaler nur für Passkreuze und Register verwendet, die in allen Farbauszügen ausgegeben werden sollen.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::isRegistrationColor</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C1d5a5f8285a3ddf6e51b7891e47f84d9</id1>
+				<id2>C22d954274928cb3f4b5dc0bfed1a5c35</id2>
+				<id3>155c2574a44bfd4ae0492d5813e95057</id3>
+				<id4>be2b36abaaa70ec158605e0411e81eff</id4>
+				<name>! Flächendeckung oberhalb 300% (Füllung)</name>
+				<comment>Objekte mit einer Flächendeckung oberhalb 300% können im Rollenoffsetdruck Probleme verursachen.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_F</group>
+					<token>CSGST_F::TotalAmountOfInk</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>300</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C2c89956e869499352e867e8e6b702e59</id1>
+				<id2>Cd318eb34995be5143847063cd4a55261</id2>
+				<id3>c7ec9208247421e225fd79ffc409f11a</id3>
+				<id4>da7e2fd4f2c8f302a0a14876e12a312e</id4>
+				<name>! Flächendeckung oberhalb 300% (Kontur)</name>
+				<comment>Objekte mit einer Flächendeckung oberhalb 300% können im Rollenoffsetdruck Probleme verursachen.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_S</group>
+					<token>CSGST_S::TotalAmountOfInk</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>300</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C7cb114fca6dbc4091e25db6858fdffde</id1>
+				<id2>Cd1f72d4ddb04ad43a3a44509577f1072</id2>
+				<id3>dfae4a4e5a0c4b9544db2d41e16023ee</id3>
+				<id4>03f003b1c5ccbfadb5804d6e466ee9c5</id4>
+				<name>CC_FilledObjectIsNotSetToOverprint</name>
+				<comment>CC_FilledObjectIsNotSetToOverprint</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSGST_F</group>
+					<token>CSGST_F::isOverPrintEnabledFill</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C872ce1d3c2517c3bd870f16b91a86fab</id1>
+				<id2>C0beb4bff5f6c639f9767999eb644f117</id2>
+				<id3>c69852dd90be55512fd5c06e3b5da88b</id3>
+				<id4>66ec26e5d3554926ce0824b5e349fdf9</id4>
+				<name>CC_ObjectUsesBlackOnly</name>
+				<comment>CC_ObjectUsesBlackOnly</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::ObjectUsesBlackOnly</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C8e5e598231071363d8f8a4f0b1c3a163</id1>
+				<id2>C93a344660f57f62558409aa72ab6207e</id2>
+				<id3>2d1eb986be14b3fbe103cc480397f265</id3>
+				<id4>7774e3a6667017696247241357ef462c</id4>
+				<name>CC_TextIsSmallerThan12Pt</name>
+				<comment>CC_TextIsSmallerThan12Pt</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSTEXT</group>
+					<token>CSTEXT::Textsize</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>12</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cdbd64e0989e62bc5dacd153f9e4bf545</id1>
+				<id2>C586d4a737bc120ba18bc835b99525252</id2>
+				<id3>188a6f6b33e2f8ac2def350c67e722db</id3>
+				<id4>2095e46d87a7f8c4c4e552127b56ea2c</id4>
+				<name>Objekt hat mehr als 97% Schwarz</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::ObjectUsesBlackWithAPercenOf</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>96</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Ca8e2ef922076f3ae6dc6baf4bcdbc6ef</id1>
+				<id2>Ce5c212189675cc235f709420ef5494a7</id2>
+				<id3>c58511f86933299f6eb3c44c14f1b184</id3>
+				<id4>e5cbc826f65ca18752ed0c5a080de65b</id4>
+				<name>CC_ObjectIsWhite</name>
+				<comment>CC_ObjectIsWhite</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::ObjectIsWhite</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C7243799155313e43be1955e44629a4fc</id1>
+				<id2>C8c2e7514dd1600a588a08c289ea9df25</id2>
+				<id3>0ac4ea86df4d5b1a9401ea1ed1fac8c7</id3>
+				<id4>9e630b7d331de4b4accc6835d647066a</id4>
+				<name>CC_FilledObjectNotSetToKnockOut</name>
+				<comment>CC_FilledObjectNotSetToKnockOut</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSGST_F</group>
+					<token>CSGST_F::isOverPrintEnabledFill</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C5a88cd8ffd2448906de9a69c13efd2f6</id1>
+				<id2>C4bb239058a99d533ec3e4ecca551fb23</id2>
+				<id3>a0f12134055e1318e4cc8b214b196070</id3>
+				<id4>37b56e2c7d08a89df95b5bc067f5f801</id4>
+				<name>! Kein Textobjekt</name>
+				<comment>Ermittelt keine TextObjekte</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CONTSTM</group>
+					<token>CONTSTM::IsText</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C6ed019c53b9587fd2d1dd07fb5630441</id1>
+				<id2>Cdd66549b202bfe9fd88d4e7ab3aa843d</id2>
+				<id3>e7dfe08136e4dd9233cf38633aa8bee4</id3>
+				<id4>39c0bf332c37488eea95a920da505ee1</id4>
+				<name>nicht mit XPress erzeugt</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::DOCINFO</group>
+					<token>DOCINFO::Creator</token>
+					<operator>OP::not_contains</operator>
+					<data>
+						<text>
+							<value>XPress</value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C7b0b193f8d7fa6a5f3410f0a14ea4097</id1>
+				<id2>Cc43dfcef52dbe4facf63ca61d5f71e53</id2>
+				<id3>bbf605f3563af91a8817ef07af3f06de</id3>
+				<id4>0c8c5f41332dda17e14a6710269286c2</id4>
+				<name>CC_StrokedObjectNotSetToKnockOut</name>
+				<comment>CC_StrokedObjectNotSetToKnockOut</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSGST_S</group>
+					<token>CSGST_S::isOverPrintEnabledStroke</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C82212d7f50d34792dc454e7002dd67b1</id1>
+				<id2>C6a09a3d023eaa55dbef6186093b1f83d</id2>
+				<id3>82365941d5c4744a131d60c4905fa623</id3>
+				<id4>8617910da392fa842459cd3ee844d02e</id4>
+				<name>! Ausgabebedingung nicht &quot;ISO Coated&quot;</name>
+				<comment>Ausgabebedingung nicht &quot;ISO Coated&quot;</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::OUTINTENTS_ICC</group>
+					<token>OUTINTENTS_ICC::icSigProfileDescription</token>
+					<operator>OP::unequal</operator>
+					<data>
+						<text>
+							<value>ISO Coated</value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C3f752f2acb9a6c1286c44f6d4bef3532</id1>
+				<id2>C234c285ece7c7099f6b2fdf6170d8c23</id2>
+				<id3>5dd5c44394421778eda611cea507e93d</id3>
+				<id4>e0c0bbb5cf9846f25c7577dc9020ae6d</id4>
+				<name>! Ausgabebedingung nicht &quot;Europe ISO Coated FOGRA27&quot;</name>
+				<comment>Ausgabebedingung nicht &quot;Europe ISO Coated FOGRA27&quot;</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::OUTINTENTS_ICC</group>
+					<token>OUTINTENTS_ICC::icSigProfileDescription</token>
+					<operator>OP::unequal</operator>
+					<data>
+						<text>
+							<value>Europe ISO Coated FOGRA27</value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C1c0f623e5f997f9fcafad55c0c99a992</id1>
+				<id2>C4b4c7c7cfc4a699b2a565d1824227149</id2>
+				<id3>adc80ca6b6a451f883dee39cc6472fbb</id3>
+				<id4>ed2347f6a710a7cef157637627d5e6be</id4>
+				<name>! Textobjekt</name>
+				<comment>Ermittelt TextObjekte</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CONTSTM</group>
+					<token>CONTSTM::IsText</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C6e72e4e7165c1ca6f96862a26c97638a</id1>
+				<id2>Cf964f4a90344dc1b3c9d9943edc29078</id2>
+				<id3>947382f4d2d057ae10d2525734c8f70d</id3>
+				<id4>27ddb1195c2f94c334a603fe5463d02e</id4>
+				<name>Farbe ist 400CMYK (Kontur)</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_S</group>
+					<token>CSGST_S::TotalAmountOfInk</token>
+					<operator>OP::equal</operator>
+					<data>
+						<num>
+							<value>400</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C002b0f02c16523e7cc52b7c64b16f645</id1>
+				<id2>C4c11672d6199499480b1d7d385f34d32</id2>
+				<id3>bb3d19ee2a9625530b9bd9212b8f52dc</id3>
+				<id4>be7de4b931aaa18b15ea1992e176aa6a</id4>
+				<name>Objekt ist kein Text</name>
+				<comment>Ermittelt TextObjekte</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CONTSTM</group>
+					<token>CONTSTM::IsText</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Ca7ba9d0589fa8e15641050f13ca6b045</id1>
+				<id2>C098eaca1f0cb770c2830bd36e2afcf95</id2>
+				<id3>46b719faeea8ba3e2717ced8c7a3f552</id3>
+				<id4>e931de79c77610988ceb6fab755c659e</id4>
+				<name>Flächendeckung oberhalb 97% (Füllung)</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_F</group>
+					<token>CSGST_F::TotalAmountOfInk</token>
+					<operator>OP::greater_or_equal</operator>
+					<data>
+						<num>
+							<value>97</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C8c3e9157de157023c7efb50b51473321</id1>
+				<id2>Cf17003fcc8efbbaf034a2e1e7e01e4c2</id2>
+				<id3>ddfb19d56e81921e2f2b1ea829fbaa16</id3>
+				<id4>7b9ec64904b61195fd4bc76b4678754a</id4>
+				<name>CC_StrokedObjectIsNotSetToOverprint</name>
+				<comment>CC_StrokedObjectIsNotSetToOverprint</comment>
+				<flags edit="1" visible="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSGST_S</group>
+					<token>CSGST_S::isOverPrintEnabledStroke</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C594002a1a6e7b95bff9768b8263bcf9f</id1>
+				<id2>C5ec7aa95351039552e8ee5ec894b49f6</id2>
+				<id3>013af005311bec79fc402c502df7174e</id3>
+				<id4>63920aaba766725323b6cf534b166e20</id4>
+				<name>Linienstärke unter 7 pt (2mm)</name>
+				<comment>Die Linienstärke beträgt weniger als 2mm</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_S</group>
+					<token>CSGST_S::LineWidth</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>7</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Caa96e2545a2d9ccacad39fdbfdea0888</id1>
+				<id2>C04306a4a6bda722be2d280aa2203bc12</id2>
+				<id3>5b410c5924bf0a7f1cdb466e3aca0026</id3>
+				<id4>a7ed6a4acc2a4338c3a13db369152ea0</id4>
+				<name>! Halbton-Bild</name>
+				<comment>Prüft auf Halbton-Bild.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::BitsPerColourComponent</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>1</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C7b3518da89495cff6a36666c9ae91331</id1>
+				<id2>C7026c6228612f5af714128469ad879e2</id2>
+				<id3>82aacf6b4cd16c7fb960cc2a27fb1a00</id3>
+				<id4>b7915de9dcf404e6ea895e294ebd4567</id4>
+				<name>! Bildauflösung ist kleiner als 225 ppi</name>
+				<comment>Bildauflösung ist kleiner als 225 ppi (entspricht 60 L/cm mit Qualitätsfaktor = 1.5).</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::Resolution</token>
+					<operator>OP::less_or_equal</operator>
+					<data>
+						<num>
+							<value>225</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C3a175e156e9459801f15f04c382636de</id1>
+				<id2>Cf2f8204effba486c2c47c1a1f033c494</id2>
+				<id3>af3a43fbf6d7f0ad05fe7a39d12b747c</id3>
+				<id4>b3595d74bafb28fed0afa31ae0233a72</id4>
+				<name>! Bitmap-Bild</name>
+				<comment>Prüft auf Bitmap-Bild.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::BitsPerColourComponent</token>
+					<operator>OP::equal</operator>
+					<data>
+						<num>
+							<value>1</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C6b606ca5d1a169584a7e8757ce264fd8</id1>
+				<id2>C8a438190de95865b459b949d9922cef8</id2>
+				<id3>0199d49cb64517f1f62001aa407ed6f0</id3>
+				<id4>f2e4b7b5041553176b641d886b0dec37</id4>
+				<name>Bildauflösung unter 600 ppi</name>
+				<comment>Die Auflösung des Bildes ist geringer als 600 Pixels/Inch</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::Resolution</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>599</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C6681155a3e0dc6f1cf04b812d7bd465d</id1>
+				<id2>Cc71478267631a5db059f4ca7f1d4e8f2</id2>
+				<id3>65fae7a5ace3cf0dd327a986c607dea9</id3>
+				<id4>4eca22e48d3785e37ac17f1e9e1aee63</id4>
+				<name>Verwendet Transferfunktion (Default)</name>
+				<comment>PDF/A verbietet die Verwendung einer Transferfunktion.</comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CSGST_G</group>
+					<token>CSGST_G::HasTR2EntryWithAValueOfDefaul</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cd4c0c019c4acfa7836b520a908c75fb1</id1>
+				<id2>Cd44a11218065777573ed5483172b70b7</id2>
+				<id3>932a629660b668ea7a19eda9416f1961</id3>
+				<id4>bde628fab92d2b7fbbb0786f27dcfd5f</id4>
+				<name>Objekt nahe der Trimbox (weniger als 3 mm)</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CONTSTM</group>
+					<token>CONTSTM::SmallestDistInTBoxBorder_pt</token>
+					<operator>OP::less_or_equal</operator>
+					<data>
+						<num>
+							<value>0</value>
+							<tolerance>8</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C7d7be48b3182385ab072928a19aeb45b</id1>
+				<id2>Cf31cbde31b6c0d54c39e9c90e4737725</id2>
+				<id3>d2a33434b9d7feb54162b09345db19a0</id3>
+				<id4>1d2d676105d1922961a6aac0850e7c08</id4>
+				<name>Objekt ist innerhalb Trimbox</name>
+				<comment></comment>
+				<flags edit="1" visible="1"></flags>
+				<atom>
+					<group>Group::CONTSTM</group>
+					<token>CONTSTM::ObjectIsOutsidTrimBoAndArtBox</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C4acb0b11dbcc25c4b2a032885ba63b00</id1>
+				<id2>Cac92ee45aee4e38ae3282021f18a72c8</id2>
+				<id3>7515605e870838d6fd6726d2f7f15c3d</id3>
+				<id4>31f2da539ff730f0aba7c56ec74e93be</id4>
+				<name>PRCWzDocu_Encrypted</name>
+				<comment>PRCWzDocu_Encrypted</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::DOC</group>
+					<token>DOC::IsEncrypted</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C221fefcffa2ac3a377a314dbd7fc1bc5</id1>
+				<id2>Ce59d83763edee3f53f7b093539382eda</id2>
+				<id3>0b90ce1dea9d93c131e82157ba9fe87a</id3>
+				<id4>97785fcf2099e8ac61cd031251217648</id4>
+				<name>PRCWzDocu_Damaged</name>
+				<comment>PRCWzDocu_Damaged</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::DOC</group>
+					<token>DOC::IsDamaged</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C84ac4212d12a55ce43d4a95f63cb5b07</id1>
+				<id2>C36c19efc2e14ff9a88cfdf495a775a53</id2>
+				<id3>f3eada0ce4f03f25ab1fa73a906f2bdf</id3>
+				<id4>80207f4325a0a7ec03115b6167067354</id4>
+				<name>PRCWzPage_SizeOrientDifferent</name>
+				<comment>PRCWzPage_SizeOrientDifferent</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::DOC</group>
+					<token>DOC::OrientAndSizeEqualForAllPages</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C677f322d8adefa9827590cdc0cb17d2f</id1>
+				<id2>C29a3ca2bcc201094706e133adbb66e1f</id2>
+				<id3>c4447cbc9e0fef5727a68be20f82b019</id3>
+				<id4>393c3a5197e341de1e6b75e13c5bce99</id4>
+				<name>PRCWzPage_OnePageEmptyIgnoreOutsideBoxes</name>
+				<comment>PRCWzPage_OnePageEmptyIgnoreOutsideBoxes</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::PAGE</group>
+					<token>PAGE::PageIsEmptyInsideTrimBox_Blee</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value>1</value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C71705c23738f038039ba4f355e9fc8a6</id1>
+				<id2>C1b82e4dcd74de31c222ca3ae9adbb7c2</id2>
+				<id3>1305c248b41e866c285f4ea74ce6ee26</id3>
+				<id4>446f0776f52f4e967ad2240f384b693b</id4>
+				<name>PRCWzImag_ResImgLowerPixelsPerInch</name>
+				<comment>PRCWzImag_ResImgLowerPixelsPerInch</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::Resolution</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>100</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C530c7d55cfd76945c82b05881de50fba</id1>
+				<id2>Ca7fafdf48cebe54ed7ab5687c7988cac</id2>
+				<id3>39d390e0a886143273d2b7163fcf97cb</id3>
+				<id4>c3e4fc56847d318538cb59c6f05f08e0</id4>
+				<name>PRCWzImag_ResImg_IsCT</name>
+				<comment>PRCWzImag_ResImg_IsCT</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::BitsPerColourComponent</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>1</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C5d7f68afac4c7307ceb29c20ccf9ae65</id1>
+				<id2>C99a6be9d242811eaac5c42ed89ea1cc7</id2>
+				<id3>5b28e9abd85ddc1ecf957196768282eb</id3>
+				<id4>893f38de628f9915fbd871c24c9e6cb2762367c0bde97b94d5258504c1745256</id4>
+				<name>PRCWzImag_ResImgUpperPixelsPerInch</name>
+				<comment>PRCWzImag_ResImgUpperPixelsPerInch</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::Resolution</token>
+					<operator>OP::greater_or_equal</operator>
+					<data>
+						<num>
+							<value>550</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Ce8cb2a4a51c86efa091ea066607ba1e7</id1>
+				<id2>Ca7fafdf48cebe54ed7ab5687c7988cac</id2>
+				<id3>f41dddf2e572700b9f04f8ff6602726b</id3>
+				<id4>cec8ccbcea94eaa553a757da67dca5c9e5ba18373527c48bac6b568f0b1a565f</id4>
+				<name>PRCWzImag_ResImg_IsCT</name>
+				<comment>PRCWzImag_ResImg_IsCT</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::BitsPerColourComponent</token>
+					<operator>OP::greater</operator>
+					<data>
+						<num>
+							<value>1</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C50791829924264ec7828f45fc5a9b504</id1>
+				<id2>C91457a5352d354fb9f52f49e7d310845</id2>
+				<id3>ac88d6957f373672a5c09779e56238c6</id3>
+				<id4>cfde34befaf767376919c90c22d5423e</id4>
+				<name>PRCWzImag_ResBmpLowerPixelsPerInch</name>
+				<comment>PRCWzImag_ResBmpLowerPixelsPerInch</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::Resolution</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>300</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C4ae45a04382543ee98a15d8a72ac69a1</id1>
+				<id2>Ca463e359e2e0388210b50fc64e0b1dc7</id2>
+				<id3>5e0aa09bfdae55315f4cb77cdf45f8cd</id3>
+				<id4>147987829322c9bfb743c89bc0ec9546</id4>
+				<name>PRCWzImag_ResBmp_IsBitmap</name>
+				<comment>PRCWzImag_ResBmp_IsBitmap</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::BitsPerColourComponent</token>
+					<operator>OP::equal</operator>
+					<data>
+						<num>
+							<value>1</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C9f35f7cd48121daf111c16e05e541585</id1>
+				<id2>C2433c6d3fe3288382cd3667fd65bd274</id2>
+				<id3>605555dad047b617a562af8fb8957d2c</id3>
+				<id4>da97ccd1a6f2a0f6234d05f523fb5663</id4>
+				<name>PRCWzImag_NotUncompressed</name>
+				<comment>PRCWzImag_NotUncompressed</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::isCompressed</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C272e74603d4bbbdb5c0a409256c853af</id1>
+				<id2>C3535767d9b9a8ddef94748cfe5355531</id2>
+				<id3>8c303fd8b9b033f1a29391c45d9164a8</id3>
+				<id4>55ef95bbe76cffb57a7a270fe6dbd83b</id4>
+				<name>PRCWzImag_NotUseOPI</name>
+				<comment>PRCWzImag_NotUseOPI</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSIMAGE</group>
+					<token>CSIMAGE::hasOPIInfo</token>
+					<operator>OP::is_embedded</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C3e5f4835bc03134420e62807ce044062</id1>
+				<id2>Cedb27d6db073644e1a44173737e1acab</id2>
+				<id3>0c50e74aa7b211c7949182d75d7e62dc</id3>
+				<id4>a054a30902eaffb4680c0f8171e19122</id4>
+				<name>PRCWzColr_RGB</name>
+				<comment>PRCWzColr_RGB</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::isDeviceRGB</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cf1c30dc0ac8dba3e4c458b8b62781f6c</id1>
+				<id2>Cd5767eddd6840da727edf72e3db17f6b</id2>
+				<id3>fa7f7401fb37a70aafe397dd9b47c844</id3>
+				<id4>18295a8124dea2bdd9782e2f51e6cbca</id4>
+				<name>PRCWzColr_DICS</name>
+				<comment>PRCWzColr_DICS</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSCOLOR</group>
+					<token>CSCOLOR::isCIEBasedColorSpace</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cb988d741082ff0e0f1796a71d6ab783c</id1>
+				<id2>Ca928cc4df682e14f9b691e8d7ce90dad</id2>
+				<id3>dab86ee56f5baeb3134c3db3b0ccc173</id3>
+				<id4>e93d6183e29326b8db68020cca7bb7c7f7cb5b3e9102ff0c828e9fe347e32191</id4>
+				<name>PRCWzColr_InconsistentNaming</name>
+				<comment>PRCWzColr_InconsistentNaming</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::DOC</group>
+					<token>DOC::SpotColorNamesAreInconsistent</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cceafe68d4ccd8a637d1d6efe0358fa5f</id1>
+				<id2>C51e3e97d2b382b87a0175612a1e54105</id2>
+				<id3>d7eaa0c90c2a355f01a803ff58c34a64</id3>
+				<id4>420ce701501dfc578533a3a2f5287221</id4>
+				<name>PRCWzFont_NotEmbedded</name>
+				<comment>PRCWzFont_NotEmbedded</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSFONT</group>
+					<token>CSFONT::isEmbedded</token>
+					<operator>OP::is_not_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C4703637d4044e721d70d8497198b64f3</id1>
+				<id2>C975d0c1c0c77690f2e98950b10d35531</id2>
+				<id3>eed24cf07c521aca2043e32efaa2bf75</id3>
+				<id4>de9ec6155d6dafc5377fed91cd0397d3</id4>
+				<name>PRCWzFont_Type1CID</name>
+				<comment>PRCWzFont_Type1CID</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSFONT</group>
+					<token>CSFONT::FontTypeIsCID_Type1</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C4482860e25f9095b94fc8811676e3861</id1>
+				<id2>C8892c4201c3f66f6a800d540781b3ff2</id2>
+				<id3>cebc03fb2b801c17c2e1ff03feac1321</id3>
+				<id4>050beca37f7f9a317b3e5c175fb7d48e</id4>
+				<name>PRCWzFont_TrueTypeCID</name>
+				<comment>PRCWzFont_TrueTypeCID</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSFONT</group>
+					<token>CSFONT::FontTypeIsCID_TrueType</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Ccd5229f22cd0b64363f2a85a84c7777a</id1>
+				<id2>Ca914e1b522e7e06a0d50e0feb6697e41</id2>
+				<id3>4ae0dfbe57e05069b4fe35bd3a780b3a</id3>
+				<id4>fe4c14dbe06150edee01c48e996a65c68b1a2367c41838f9cd42ccc63d062521</id4>
+				<name>PRCWzFont_Type3</name>
+				<comment>PRCWzFont_Type3</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSFONT</group>
+					<token>CSFONT::FontTypeIsType3</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cc2a2a6b52735854a9ef9db91690e1f88</id1>
+				<id2>C28e72a4c5ecac17f156b286b76177fe0</id2>
+				<id3>1be900fb1e908b5632d90630f1cbdd6a</id3>
+				<id4>fb6d0afdf6a05d059ebece465ae6208d</id4>
+				<name>PRCWzFont_OpenType</name>
+				<comment>PRCWzFont_OpenType</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSFONT</group>
+					<token>CSFONT::FontTypeIsOpenType</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Ce396db3a8a3c89db9e3882308759063d</id1>
+				<id2>Ccb93c0e13982ebb2af13e80c95d86b88</id2>
+				<id3>35f383e08b3d48b0d3eabff6506c92fc</id3>
+				<id4>3768caf8b98e799cf7f583472e53476d</id4>
+				<name>PRCWzRend_Transparency</name>
+				<comment>PRCWzRend_Transparency</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSGST_G</group>
+					<token>CSGST_G::HasTransparency</token>
+					<operator>OP::is_embedded</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cdc2c8de601038aaa32ba314d4aa8ad37</id1>
+				<id2>C467e5d4b98b99d3c394c2c1640d4bd07</id2>
+				<id3>2df255bf9e615f5ecfcd0a8022a0a9f3</id3>
+				<id4>e7554f85bcb952d429a595304db62092</id4>
+				<name>PRCWzRend_Halftone</name>
+				<comment>PRCWzRend_Halftone</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSHALFTONE</group>
+					<token>CSHALFTONE::isHalftonePresent</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C960dcaab3db8b66526a9a5d3147f72c0</id1>
+				<id2>C2604800c1532b344c34e717ddfec2e0a</id2>
+				<id3>22c81c55f629de0b5fd97e8bc8811c6b</id3>
+				<id4>f4c0d5067e64a4dad2d574099483e7f8</id4>
+				<name>PRCWzRend_Curve</name>
+				<comment>PRCWzRend_Curve</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSGST_G</group>
+					<token>CSGST_G::HasTransferFunction</token>
+					<operator>OP::is_embedded</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>Cd425f78735ff3b8f1b9c783454fd32f6</id1>
+				<id2>Cdddc234c493d7c2ed66506df0f05ca89</id2>
+				<id3>b5e3b1f6c66d867e48b8a0da126a183b</id3>
+				<id4>9a8c85d9614d9f28edb20f06c612a611f50acab2c6d088f1aa49c2b2b7fd22c3</id4>
+				<name>PRCWzRend_ThicknessPoints</name>
+				<comment>PRCWzRend_ThicknessPoints</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::CSGST_S</group>
+					<token>CSGST_S::LineWidth</token>
+					<operator>OP::less</operator>
+					<data>
+						<num>
+							<value>0.124</value>
+							<tolerance>0</tolerance>
+						</num>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C87d1797e71ae0a96f9e5817912c98d61</id1>
+				<id2>C4592182b6849d1b2f548db4e7369bba9</id2>
+				<id3>650fc08406bf35d258107d28ebae8521</id3>
+				<id4>1a875ee23d54558cb2270ae49c6102f0</id4>
+				<name>C_114_Embedded_PostScript_operato</name>
+				<comment>C_114_Embedded_PostScript_operato</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::POSTSCRIPT</group>
+					<token>POSTSCRIPT::UsesPSOperator</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+			<condition>
+				<id1>C187bb1b6eb9a8b213f3364671d0717c4</id1>
+				<id2>C237caf2d7d17c277df5c0bb917997118</id2>
+				<id3>51eb5b0634e4ccf9aca10173c1dd9cbb</id3>
+				<id4>4d72eedaf6dd01a3bb710d71f3ad90ac</id4>
+				<name>C_115_Embedded_PostScript_XObject</name>
+				<comment>C_115_Embedded_PostScript_XObject</comment>
+				<flags edit="1" visible="1" wizard="1" dict="1"></flags>
+				<atom>
+					<group>Group::POSTSCRIPT</group>
+					<token>POSTSCRIPT::UsesPSXObj</token>
+					<operator>OP::is_true</operator>
+					<data>
+						<text>
+							<value></value>
+						</text>
+					</data>
+				</atom>
+			</condition>
+		</conditions>
+		<rules>
+			<rule>
+				<id1>R9ba9abebadf8616b99a74597d6c42a0d</id1>
+				<id2>Rda1db66a84c6962cf6c8bbc3b7799453</id2>
+				<id3>f014bf919ee9fe6d9047d557c14c42a6</id3>
+				<id4>49ed4cb3d1d7cf8f338e55fae4350be8</id4>
+				<name>PDF enthält separierte Seiten</name>
+				<comment>PDF-Dateien können bereits separierte Seiten enthalten. Dies ist für PDF/X-1a- und PDF/X-3-Dateien nicht zulässig.</comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C986132064ad731b76c8904cd5966aa41</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R7bf65baea7b0d3b2480d29680a790397</id1>
+				<id2>Rab218278999f153ca3fb4b5977ebb5b4</id2>
+				<id3>55c0359ff4f94bf324c27363f70b1e5b</id3>
+				<id4>e6c9dac0b4666600b3283989e7c44773</id4>
+				<name>Mit PDFWriter erstellt</name>
+				<comment>PDFWriter ist ein als Druckertreiber konstruierter PDF-Konverter. Er ist für die Verwendung im Büroumfeld geeignet und häufig schneller und leichter zu bedienen als Acrobat Distiller. Allerdings erzeugt PDFWriter PDF-Dateien, die für die Druckvorstufe nicht geeignet sind.</comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Cbb89ebacf227987aecf7a33dfcd9a228</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R7184448d1ca3dcc56feb57386c4125b7</id1>
+				<id2>R38981c08ce4effca7d8a657029ff0771</id2>
+				<id3>1a239dad46f05ab4e3d1a0cea2e0408e</id3>
+				<id4>c9c0e3e93f1ee0426e84c7cc992da2f3</id4>
+				<name>LZW für Seitenbeschreibung verwendet</name>
+				<comment>LZW für Seitenbeschreibung verwendet</comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C61e391fff04d072c0a7ce86f0639413c</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rf7a7abb86a4b4ed494c5c27b59d0800b</id1>
+				<id2>Rdab0518cd2f0ca2eebca1bdbf14adf3c</id2>
+				<id3>f77a0f02e67539804e4cf70286bd48d5</id3>
+				<id4>c1e267e34ac25f4fa79306e736d40ea5</id4>
+				<name>Acrobat-Formularelement innerhalb der Seite</name>
+				<comment>Prüft ob Formularelemente sich (ganz oder teilweise) innerhalb der durch BleedBox (Endformat der Seite zuzüglich Beschnittzugabe) oder TrimBox (Endformat der Seite) definierten Bereiche befinden. Die Familie der ISO 15930-Standards - bekannt als PDF/X - verbietet Formularelemente innerhalb dieser Bereiche.</comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C638d0ef269374068ba7f3bd1b48b3823</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R4b2e867827d509851bed7b7c1acc320d</id1>
+				<id2>Racc607c4eb11cfe8e4841c06afd143ed</id2>
+				<id3>6eeb05e943a889092db8368e0948376c</id3>
+				<id4>55e02dc7dc8b19ced6f71aac2ea52695</id4>
+				<name>Alternativbild ist auf Drucken gesetzt</name>
+				<comment>Dieser Wert gibt an, ob bei der Druckausgabe das Alternativbild statt des eigentlichen Bildes ausgegeben werden soll. Für PDF/X-Dateien ist dies nicht zulässig.</comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C9c9c8d08fec75a9b06d9952f69c7824d</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R924c2a6318b1897913725eb9ed9aac62</id1>
+				<id2>R2e8a942990055e2abdc4b5134efa15a3</id2>
+				<id3>52ed2b01c59900a44b95d9d15a908dfe</id3>
+				<id4>bc613fe95781b303a5f0bf600bb3e3e8</id4>
+				<name>Dokument enthält Aktionen</name>
+				<comment>Aktionen stellen insbesondere im Zusammespiel mit JavaScript eine (wenn auch sehr geringe) Virengefahr dar.</comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C11e991f61b2fe956e6787824f7f08ba8</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R813564ca29f88d3d8437b3127599f45e</id1>
+				<id2>R9843642a55f9ae1dc2a8f4aa480e1099</id2>
+				<id3>f13580f1948b3929ac685f3ecaa79646</id3>
+				<id4>40fe89134e8c5d23b4cfd517d92b6a2a</id4>
+				<name>Dokument enthält JavaScript</name>
+				<comment>JavaScript stellt insbesondere im Zusammespiel mit Aktionen oder Stapelsequenzen eine (wenn auch sehr geringe) Virengefahr dar.</comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C392b18cebab76d86c2fba33c61d1f084</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R9a96ed37ed1c2a1fa08eb1bc8642272e</id1>
+				<id2>Re7b0b34972f9be3857bb46886046bda4</id2>
+				<id3>24e73584b05ff8ebb124e7c121207019</id3>
+				<id4>fa9967a12274dc597b1a526bd24886ce</id4>
+				<name>Schwarzer Text hat mehr als 280% Gesamtfarbe mit mindestens 85% Schwarz</name>
+				<comment>Dieser dunkle Text tendiert im Druck zuzuschmieren. Bei zusätzlicher Passerungenauigkeit werden häßliche Ränder sichtbar. Weiters deutet diese Farbdefiiton auf einen schwarzen Text hin, der über Farbmanagement in 4C separiert wurde.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Ce8431e23a96fbfeaf973699664c0dc03</condition>
+					<condition>C33dbb375cc68a9dc9abd91a9459a9b24</condition>
+					<condition>C8e443e2638b57d76377ac8c41ba5028a</condition>
+					<condition>C97338d6f272f7f31aa9fa14358d8fc86</condition>
+					<condition>C04fd2e0fd6bd1a9464855363fd016cfc</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R7211bd99ec331764281396a7d3277798</id1>
+				<id2>R09fe846803bf785da8eb3d9a5d799242</id2>
+				<id3>07ee40277b84bdd6e632f47a95287de5</id3>
+				<id4>e8ff3d6a1e7d64918e2ac0058829747b</id4>
+				<name>Text (Füllung) ist in 400% Farbe definiert (CMYK)</name>
+				<comment></comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Cb3f9e89ecdbb49f9e7330e57ca12f4f8</condition>
+					<condition>C97338d6f272f7f31aa9fa14358d8fc86</condition>
+					<condition>C33dbb375cc68a9dc9abd91a9459a9b24</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R14fef533c551ce1e9f672614118c462c</id1>
+				<id2>R01aef506985c2f1f35324e7d55007b63</id2>
+				<id3>42ae56b8a1a0ba24cb9bd0239fd844b5</id3>
+				<id4>3c932f1aba37f651f7cbfbe29696c73b</id4>
+				<name>Text kleiner als 6 Punkt ist aufgerastert</name>
+				<comment>kleiner, aufgerastarter Text kann im Druck unleserlich erscheinen</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C33dbb375cc68a9dc9abd91a9459a9b24</condition>
+					<condition>C97338d6f272f7f31aa9fa14358d8fc86</condition>
+					<condition>C29b0ba62471b05bcb1c26c8a6b211e8a</condition>
+					<condition>Cf34bb644aa71c1c55253cfe91ebd8796</condition>
+					<condition>C378b6709f1d2b79b9664a6be3cf5ad4f</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rfb011c899ff8355febc5d38936215e7a</id1>
+				<id2>R08e64ec872bb8b45d2aa5ae360c81991</id2>
+				<id3>2301a5770b7a422a51488949df86ec9c</id3>
+				<id4>caacb4e237933c79ca9306d411eef0fe</id4>
+				<name>Haarlinie 0.25 pt mit mindestens 2 Farben</name>
+				<comment>Haarlinie ist in mindestens 2 Farben definiert. Das kann im Druck zu unsauberen Kanten auf Grund von Passerproblemen führen.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C09e5b9f480479cecfcf0b2aa272fa4e8</condition>
+					<condition>C936d1f5c7f815ec2a53dc7abe5fa575c</condition>
+					<condition>C86021870da828dd96e4ab137897ddcab</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R5cf1c95deaf59f52d964cb60006226b5</id1>
+				<id2>R72a70c11fbd9ba4d8dd1007f9f4536ab</id2>
+				<id3>ed1051378018eccc0cf3fd9dab36269c</id3>
+				<id4>baf8885f9b56321abd79b1b228ca5061</id4>
+				<name>Text kleiner als 4 Punkt</name>
+				<comment>kleiner Text kann unter Umständen nicht mehr lesbar sein</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C0c18f8a68985c6e29777ec112d66e080</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rec30be58687e0410509ebf338455390e</id1>
+				<id2>R5805252287409692f1b61d48287f0301</id2>
+				<id3>c526d7c02a8073ed79510b6099fe303a</id3>
+				<id4>378bdefcd4f2c2f8f116a95bf4691ba9</id4>
+				<name>Haarlinie 0.25 pt ist aufgerastert</name>
+				<comment>Hairline ist ist weniger als 90% aufgerastert. Das kann zum Wegbrechen im Druck führen.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C09e5b9f480479cecfcf0b2aa272fa4e8</condition>
+					<condition>C936d1f5c7f815ec2a53dc7abe5fa575c</condition>
+					<condition>C7212a21dae0081b6d65998a6f7385e85</condition>
+					<condition>C378b6709f1d2b79b9664a6be3cf5ad4f</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R3034fff9d4df126da5ac2d65bfefa846</id1>
+				<id2>R805737c791c994a5571686d796be4ab0</id2>
+				<id3>b032750eca87af7b0c26b72ed896977c</id3>
+				<id4>ed9855aa44e155084106b0e150a3ae05</id4>
+				<name>Seite gestürzt (rotiert)</name>
+				<comment>Die Seite wird in Acrobat unter umständen anders angezeigt (rotiert), als diese vom Workflowsystem ausgegeben wird.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C1fceafa94df978f87940c0d08f97aa70</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R20302b2135729bdcf119cb6e2a284408</id1>
+				<id2>Ra4df3e8c902c5d86c7dc44654b63cd1a</id2>
+				<id3>84c52991e7ab0994afa16abcd298ae0d</id3>
+				<id4>73f2815545be00716d28fe10b573949c</id4>
+				<name>Text in Courier innerhalb der TrimBox</name>
+				<comment>Findet alle Vorkommen von Text innerhalb der TrimBox, der die Schriftart Courier verwendet. Der Grund könnte eine ungewollte Fontsubstitution im Distiller sein. </comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Cbaaa26f9f482f3eee2351e7b3c041372</condition>
+					<condition>C9ef4d72f47ec42f647913dab270ece91</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R4981f9957537acd31c736bad1f52aed0</id1>
+				<id2>Rf8e6af4048f9db90fa1edbaff8210981</id2>
+				<id3>0d6825a7be0376a0eb11ed66deb78365</id3>
+				<id4>f7e9518a138733fb8d1624c57312ac5f</id4>
+				<name>Objekt definiert in Schmuckfarbe</name>
+				<comment></comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C48ced7da6f49f8ada14e6f6dbfb2cabc</condition>
+					<condition>C99060c08263f40ba5c960e1b4e7950a7</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rbc7d94cfd8faa774bbd5cee12458a13d</id1>
+				<id2>R8ae66278339c341cfb0c54f9eb04ddd1</id2>
+				<id3>c1a355c2c39a5a6b5803a53f7b1951c1</id3>
+				<id4>5ac7ca30ef8383cf047d5ebe9a7eda86</id4>
+				<name>CMYK als DeviceN definiert</name>
+				<comment>CMYK Elemente können im PDF auch als mehrkanal Device-N angelegt werden. Diese Konstrukte erhällt man, wenn man z.B. aus InDesign mittels InRip Separation über den Distiller ein PDF erzeugt. Es gibt jedoch Farbmanagementprogramme, die diese Elemente als Schmuckfarbe behandeln und bei einer Konvertierung nicht berücksichtigen.</comment>
+				<flags info="1" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C168e5b17a1567de43018fa4fb9b3119e</condition>
+					<condition>Ccbd8260ae0c4051d367184466495b63e</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rda6ad7e185778e5c88ceb20a03427fa3</id1>
+				<id2>R524b7fd1510304c15555d1f36854e248</id2>
+				<id3>5ab9eee4fb5a6923b3d428bce5f22c02</id3>
+				<id4>281e5e82c63fd9bb494a4ccca58a0142</id4>
+				<name>Ausgabeintent definiert</name>
+				<comment>Ein Output Intent kennzeichnet den Farbraum, in dem das Dokument aufgebaut wurde. Alle Device-Farben beziehen sich auf diesen Farbraum.</comment>
+				<flags info="1" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Cde6f3281e2ed4135dd98c684d53fb7e6</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R24a955eab548e23b07a331ce96ceea6e</id1>
+				<id2>R5f9da5f10b725cfad93576d89412c53c</id2>
+				<id3>bc69ba15aa795adf0bd2fd36c56c0814</id3>
+				<id4>c9f97b7d67d2bd57363c244e6b95a571</id4>
+				<name>Pantone-Farbe endet nicht auf &quot;C&quot;</name>
+				<comment>Wird auf gestrichenes Papier gedruckt, sollte die verwendete Pantonefarbe aus dem &quot;C&quot;-Fächer stammen.</comment>
+				<flags info="1" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C28feafd8931c2b08903565bafb431a3a</condition>
+					<condition>Cc66525fbf826674f6b508477a9abce75</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R9763f63c793539432d45fa77d07c87a7</id1>
+				<id2>R742b53af649d905bb9a72eb8b7f0244e</id2>
+				<id3>bf291e3e6102d50b0ea5dcb964babc23</id3>
+				<id4>7561df865d0a5db70f5ca9ca506d0c45</id4>
+				<name>! Multiple Master Schrift verwendet</name>
+				<comment>Multiple Master Schriften können auf gewissen RIPs nicht verarbeitet werden.</comment>
+				<flags info="1" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Cfdc8ff0415653e2ccd04c29475acd88f</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R1d514842364602876662303e3fd21592</id1>
+				<id2>Rcf140cf158952d8762d62aea0444b22e</id2>
+				<id3>b07a3e54b10518aa913c8b6b9add2536</id3>
+				<id4>f256628c7e38098f0742d8c642d81898</id4>
+				<name>Alternativfarbraum der Schmuckfarbe werder CMYK noch Grau (als Devicefarbe)</name>
+				<comment>Für die 4C ausgabe muss Schmuckfarbe um gewandelt werden. dazu wird meist auf den Alternitvfarbraum zugegeriffen, der für jede Schmuckfarbe definiert ist. Ist diese werder CMYK noch Grau, so kann es bei der Umwandlung zu unreinen Farben kommen.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C727e045252706a8b4a4b32c708d469e9</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R7700d9ae190919aa27e9fb7a2ebdddad</id1>
+				<id2>R27a3ccb0ef85554cfbcc4a61272744b8</id2>
+				<id3>405d09ea6832e9b2ecdbbde2901d1555</id3>
+				<id4>cef19ea02497d22e35827e9565f80b98</id4>
+				<name>Uneinheitliche Repräsentation einer Schmuckfarbe </name>
+				<comment>Wird eine Schmuckfarbe in einem Dokument mehr als einmal definiert, gibt es oftmals ungewollte Unterschiede zwischen den Repräsentationen, so dass Probleme beim Prüfdruck wie auch bei der Wandlung in Prozessfarben entstehen können.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C4f91caf6731e1cf25155588d5aea3c23</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R6b65bc0020a7209f555d32630c541451</id1>
+				<id2>R33040aa1cbaacede68d464aa17189ff0</id2>
+				<id3>c7ce4c7020dd15a0b82f9441d4d95a18</id3>
+				<id4>69919fbcbf29357b9b92250dc6858633</id4>
+				<name>Dokument ist visuell beschnitten (Maskenrahmen = CropBox gesetzt)</name>
+				<comment>Um Missverständnisse zu vermeiden, sollte die CropBox - sofern vorhanden - der MediaBox entsprechen.</comment>
+				<flags info="1" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C996393572d5b0ce0d83b0aa9ccb713af</condition>
+					<condition>Ca202a3259d20f74f7d6beb2dffc44aa1</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R10baf10f9b7e0be41714bdde398ee978</id1>
+				<id2>R14c15a93879f9eb8001fd3f7889c6101</id2>
+				<id3>456151ac8a1dc9666b46cbfabab3fe30</id3>
+				<id4>52f2365ce8a0175bb5e820c4af509108</id4>
+				<name>RR_UsesScalingFactor</name>
+				<comment>RR_UsesScalingFactor</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" dict="1"></flags>
+				<conditions>
+					<condition>C488fc7a1fff13ea651b42915726176b1</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R9713cb5ced2b4b101621726940c929aa</id1>
+				<id2>Rfd6a9bc7929d5c8b737de1c5335bad09</id2>
+				<id3>01bbc4e84ed89adea3f6cef1163a62c2</id3>
+				<id4>052556b58a63b99d6e5bfefb59b82836</id4>
+				<name>Dokument verwendet NChannel-Farben</name>
+				<comment>NChannel-Farben sind seit PDF 1.6 definiert und werden in früheren Acrobat Versionen ignoriert (haben meist keine Auswirkung)</comment>
+				<flags info="1" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C35a8c981fc905800a3661e3cf73feb67</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R837357fd1ae52ddea6960c492220393f</id1>
+				<id2>Rf84e7ef8f6fd58a683ea7f77c1d39b34</id2>
+				<id3>136970c5f9c26ffc8e1daf8078899a58</id3>
+				<id4>d8f87c0bd5bcdbb4b6fd5e1b2f9dcd10</id4>
+				<name>Seitenrahmen inkorrekt geschachtelt</name>
+				<comment>Die im PDF enthaltenen Seitenrahmen sind zueinander falsch geschachtel. Normaler weise ist die MediaBox (= Papierformat) der größte Rahmen. Etwas kleiner oder gleich sind die CropBox (=Maskenrahmen) und die BleedBox (=Nettoformat plus Beschnitt). Der kleinste Rahmen ist entweder die TrimBox (= beschnittenes Format) oder die ArtBox (zum Positinieren in Layoutapplikationen)</comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Cd08e337ea2bc2a19025943b136ae0b51</condition>
+					<condition>C49743aacc5f0451d1903cf0dc2e34607</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R1614cbbbd4c2f20cb09b26f4d6841465</id1>
+				<id2>R3aa2f1d04f299c6dfbffacebd343eee0</id2>
+				<id3>8a3058fc3c5b89d3b1387aa207532514</id3>
+				<id4>4a23f9dd98d766fdbecc8c62f9f78498</id4>
+				<name>! Registerfarbe innerhalb Endformat (TrimBox) verwendet</name>
+				<comment>Findet alle Vorkommen von Registerfarbe innerhalb der TrimBox. Dies ist in den meisten Fällen nicht erwünscht, da dadurch ein zu hoher Gesamtfarbauftrag entsteht und bei Passerproblemen in der Druckmaschine hässliche Farbränder entstehen.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C9ef4d72f47ec42f647913dab270ece91</condition>
+					<condition>C36c5afec8f7e630cdfb48380ca7a589e</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rb80c579a99116a1c366be3a6ac7e1bd5</id1>
+				<id2>R08aa9e601640c028b817cc4188084821</id2>
+				<id3>dd5ac3c10cf2490049fb3256aedbbfe0</id3>
+				<id4>ffdf8d181dba2ea97896da4057c312c3</id4>
+				<name>Text kleiner als 6 Punkt in mehr als 1 Farbauszug definiert</name>
+				<comment>kleiner Text, der in mehr als 1 Farbe gedruckt wird, kann bei Passerproblemen zu einem unsauberen Druckbild führen</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C33dbb375cc68a9dc9abd91a9459a9b24</condition>
+					<condition>C97338d6f272f7f31aa9fa14358d8fc86</condition>
+					<condition>C29b0ba62471b05bcb1c26c8a6b211e8a</condition>
+					<condition>C86021870da828dd96e4ab137897ddcab</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R7c09d5e1bbb0cbed15ae5a349715e0ce</id1>
+				<id2>Rdb62807c2201f8ebe2e571630788a02b</id2>
+				<id3>f138eb2984c367656096224ace03c73a</id3>
+				<id4>3189f82855cea5d3b65a63aa346dd0bd</id4>
+				<name>RR_CropboxNotEqualMediabox</name>
+				<comment>RR_CropboxNotEqualMediabox</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" dict="1"></flags>
+				<conditions>
+					<condition>C996393572d5b0ce0d83b0aa9ccb713af</condition>
+					<condition>Ca202a3259d20f74f7d6beb2dffc44aa1</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R46217e9fd4ada7e3b08a4621e0a7bcc1</id1>
+				<id2>R2bd996ec9ff42cedae7e4e53cbca59b2</id2>
+				<id3>5aa6a073c7cb44742727729072ab94c3</id3>
+				<id4>adfc46c849c3b0cc1d58687332edb513</id4>
+				<name>Flächendeckung einiger Objektes über 300% (Füllung)</name>
+				<comment>Objekte innerhalb Trimbox mit einer Flächendeckung über 300% können im Rollenoffsetdruck zu Problemen führen.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C9ef4d72f47ec42f647913dab270ece91</condition>
+					<condition>C1d5a5f8285a3ddf6e51b7891e47f84d9</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R615b0d00c05f0bdb4a6cf11c60787b2f</id1>
+				<id2>R65d0a94cc9aa4828309eac161b062e78</id2>
+				<id3>f5e5b265118ef22fbd699c301221f6e9</id3>
+				<id4>4da24fd6bebfdea460cff7a397567cc8</id4>
+				<name>Flächendeckung einiger Objektes über 300% (Kontur)</name>
+				<comment>Objekte innerhalb Trimbox mit einer Flächendeckung über 300% können im Rollenoffsetdruck zu Problemen führen.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C9ef4d72f47ec42f647913dab270ece91</condition>
+					<condition>C2c89956e869499352e867e8e6b702e59</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R375fdc7f50cc83baa8d4c08105022d8b</id1>
+				<id2>Re2e5fbfc86a5744c9278b735cb7c05da</id2>
+				<id3>aca197ef46c5afefa4b89a13471c3709</id3>
+				<id4>4f5fbba154a0d6342b75aca6cf0d7dd2</id4>
+				<name>Schwarzer Text (kleiner als 12 Punkt) überdruckt nicht</name>
+				<comment>Schwarzer Text, der nicht überdruckt, kann bei Passerproblemen in der Druckmaschine zu &quot;Blitzern&quot; führen.</comment>
+				<flags info="1" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C7cb114fca6dbc4091e25db6858fdffde</condition>
+					<condition>C872ce1d3c2517c3bd870f16b91a86fab</condition>
+					<condition>C8e5e598231071363d8f8a4f0b1c3a163</condition>
+					<condition>Cdbd64e0989e62bc5dacd153f9e4bf545</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R45b19464717e5fbe5b93b142b5e42559</id1>
+				<id2>R1183e0173c7f87a094f0637f3628261c</id2>
+				<id3>757a013e592dd225e3914e6d043c7e2b</id3>
+				<id4>05ec50a886ebba25fdeca7cca1df4909</id4>
+				<name>Weisses Objekt spart nicht aus (Füllung)</name>
+				<comment>Weisse Objekte sollten normalerweis auf aussparen gesetzt sein, sonst können sie im Druck nicht sichtbar sein, da es keine weisse Farbe gibt. Manchmal haben Bildrahmen (z.B. aus QuarkXPress) einen weissen Hintergrund, der natürlich nicht aussparen soll!</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Ca8e2ef922076f3ae6dc6baf4bcdbc6ef</condition>
+					<condition>C7243799155313e43be1955e44629a4fc</condition>
+					<condition>C9ef4d72f47ec42f647913dab270ece91</condition>
+					<condition>C5a88cd8ffd2448906de9a69c13efd2f6</condition>
+					<condition>C6ed019c53b9587fd2d1dd07fb5630441</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R6e02bd0796d9e522384a3ed122f65e3c</id1>
+				<id2>R50b7e4cb414784e462932ebdba82e704</id2>
+				<id3>5ee86a34fe714fdd13c5d93f6da4f51a</id3>
+				<id4>fe3ce04dc90f7a3a319e467470dbfa21</id4>
+				<name>Weisses Objekt spart nicht aus (Kontur)</name>
+				<comment>Weisse Objekte sollten normalerweis auf aussparen gesetzt sein, sonst können sie im Druck nicht sichtbar sein, da es keine weisse Farbe gibt. Manchmal haben Bildrahmen (z.B. aus QuarkXPress) einen weissen Hintergrund, der natürlich nicht aussparen soll!</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Ca8e2ef922076f3ae6dc6baf4bcdbc6ef</condition>
+					<condition>C7b0b193f8d7fa6a5f3410f0a14ea4097</condition>
+					<condition>C9ef4d72f47ec42f647913dab270ece91</condition>
+					<condition>C5a88cd8ffd2448906de9a69c13efd2f6</condition>
+					<condition>C6ed019c53b9587fd2d1dd07fb5630441</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R4863813c107f546a2c3c0efb6ebf52fb</id1>
+				<id2>R2e49b834c5c7408c05b25cf269096983</id2>
+				<id3>b8c060b49a0478155e159a7cd6544ec0</id3>
+				<id4>9f0daf63383023bc949db7be2858b9bf</id4>
+				<name>Der gesetzte OutputIntent ist ein anderer als &quot;ISO Coated&quot;</name>
+				<comment>Die Ausgabebedingung (Output Intent) dieses PDF ist nicht &quot;ISO Coated&quot; (empfohlen), &quot;EuropeISOCoatedFOGRA27&quot; oder &quot;&quot;ISO Coated sb&quot;. Für Bogenoffset auf gestrichenes Papier wird dies aber empfohlen. Ein anderer Output Intent deutet darauf hin, dass die Daten für eine andere Druckbedingung aufbereitet wurden.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C82212d7f50d34792dc454e7002dd67b1</condition>
+					<condition>C3f752f2acb9a6c1286c44f6d4bef3532</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R71b017b69f3ea3bd422ce27c01269d61</id1>
+				<id2>R32d9725a90c4444d67aeed83d0ac6811</id2>
+				<id3>87a2535983a36cdd69db2c1b48765243</id3>
+				<id4>36f9bf2bc33754bd17e87b691f18065d</id4>
+				<name>Weisser Text steht auf Überdrucken (Kontur)</name>
+				<comment>Weisser Text sollte immer auf aussparen gesetzt sein, da er sonst beim Druck nicht sichtbar wird, da es keine weisse Farbe gibt.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Ca8e2ef922076f3ae6dc6baf4bcdbc6ef</condition>
+					<condition>C7b0b193f8d7fa6a5f3410f0a14ea4097</condition>
+					<condition>C9ef4d72f47ec42f647913dab270ece91</condition>
+					<condition>C1c0f623e5f997f9fcafad55c0c99a992</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R25352dc6cb4677d0a7a7d974ad1d658b</id1>
+				<id2>R1550ed1a34d739644aa65b744f4f9d54</id2>
+				<id3>0c2d2a8797034543580482532894eb40</id3>
+				<id4>1efb2606ac48498263a2becd19dbab9c</id4>
+				<name>Weisser Text steht auf Überdrucken (Füllung)</name>
+				<comment>Weisser Text sollte immer auf aussparen gesetzt sein, da er sonst beim Druck nicht sichtbar wird, da es keine weisse Farbe gibt.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Ca8e2ef922076f3ae6dc6baf4bcdbc6ef</condition>
+					<condition>C7243799155313e43be1955e44629a4fc</condition>
+					<condition>C9ef4d72f47ec42f647913dab270ece91</condition>
+					<condition>C1c0f623e5f997f9fcafad55c0c99a992</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R6b1deb6774b0022d7f80ac4bb9b6a118</id1>
+				<id2>R5594163573428c7411b46515dac9f8d1</id2>
+				<id3>ca156dfedc0b5778269996c07656b85a</id3>
+				<id4>ec2a5262153ec043031917804370b175</id4>
+				<name>Text (Kontur) ist in 400% Farbe definiert (CMYK)</name>
+				<comment></comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C97338d6f272f7f31aa9fa14358d8fc86</condition>
+					<condition>C33dbb375cc68a9dc9abd91a9459a9b24</condition>
+					<condition>C6e72e4e7165c1ca6f96862a26c97638a</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rb42162e4ef4bf74dd4d3019fdcd7cad9</id1>
+				<id2>R966fdb67e450c2c102857d1878502ecd</id2>
+				<id3>ad3579b2f57153e14d78e6e687c37ddd</id3>
+				<id4>3c62bc4300c8b935eff3abbb52255f5f</id4>
+				<name>Objekt (Kontur) ist in 400% Farbe definiert (CMYK)</name>
+				<comment></comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C97338d6f272f7f31aa9fa14358d8fc86</condition>
+					<condition>C6e72e4e7165c1ca6f96862a26c97638a</condition>
+					<condition>C002b0f02c16523e7cc52b7c64b16f645</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rbd22c140ec9c23d07f3cf52838772f2b</id1>
+				<id2>R466a4a18a43a9a5848907155f1a4d3f8</id2>
+				<id3>f564611286d4f12ee9edda1adba99528</id3>
+				<id4>37a371b244bf53ad839c0f8dc97e53da</id4>
+				<name>Objekt (Füllung) ist in 400% Farbe definiert (CMYK)</name>
+				<comment></comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Cb3f9e89ecdbb49f9e7330e57ca12f4f8</condition>
+					<condition>C97338d6f272f7f31aa9fa14358d8fc86</condition>
+					<condition>C002b0f02c16523e7cc52b7c64b16f645</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rc13a5cf01d99c3d4d4497a5df3283b0a</id1>
+				<id2>Rc248a8263450275165bdd487ac29d3e2</id2>
+				<id3>5a7119ceb891da8795eff204a3b5ffb2</id3>
+				<id4>bf6fced6bd95f69cb8aaff090365ce41</id4>
+				<name>Schwarze Linie spart aus und ist dünner als 2 mm</name>
+				<comment>Schwarze dünne Linien, der nicht überdrucken, können zu Blitzern im Druckbild führen.</comment>
+				<flags info="1" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C872ce1d3c2517c3bd870f16b91a86fab</condition>
+					<condition>C97338d6f272f7f31aa9fa14358d8fc86</condition>
+					<condition>Ca7ba9d0589fa8e15641050f13ca6b045</condition>
+					<condition>C8c3e9157de157023c7efb50b51473321</condition>
+					<condition>C594002a1a6e7b95bff9768b8263bcf9f</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R2ae781043f7bb8b1f637e76aa0516b63</id1>
+				<id2>R4e610bcf14fc277e509c1f706069c23b</id2>
+				<id3>bb593830392ca34226db9166b2ca5127</id3>
+				<id4>4921da42d4c45383c287335efed844f6</id4>
+				<name>Auflösung eines Halbton-Bildes ist kleiner als 225 ppi</name>
+				<comment>Auflösung von Halbton-Bildern kleiner als 225 ppi können zu Qualitätsproblemen bei der Ausgabe auf hochauflösenden Belichtern führen.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Caa96e2545a2d9ccacad39fdbfdea0888</condition>
+					<condition>C7b3518da89495cff6a36666c9ae91331</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R8ddf952c9c057fcf15ebb83eb87e9661</id1>
+				<id2>Rd80ca94cc208add9b17949f7d1aed36b</id2>
+				<id3>6cd2e33d85cbcf166cbb77d722086da7</id3>
+				<id4>bf45b49955a204fc39d831ed3ffde05b</id4>
+				<name>Auflösung eines Bitmap-Bildes ist kleiner als 600 ppi</name>
+				<comment>Auflösung von Bitmap-Bildern kleiner als 600 ppi können zu Qualitätsproblemen bei der Ausgabe auf hochauflösenden Belichtern führen.</comment>
+				<flags info="2" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C3a175e156e9459801f15f04c382636de</condition>
+					<condition>C6b606ca5d1a169584a7e8757ce264fd8</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rf08615cbd554172ba47c65eb88347572</id1>
+				<id2>Ra5c88e4d9ded996b7681cec910d52600</id2>
+				<id3>438fedccc650263c0c519a304bc97e52</id3>
+				<id4>78a1177f1ee8d333dc599690988c90eb</id4>
+				<name>Verwendet Transferfunktion (Defaultkurve)</name>
+				<comment></comment>
+				<flags info="3" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>C6681155a3e0dc6f1cf04b812d7bd465d</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rb162020f57ab2e7e44088e334223889e</id1>
+				<id2>R3679210493c6dcad39ab0413b3ececcd</id2>
+				<id3>6ab72c4550cec0e4d9324bcb8fa068ca</id3>
+				<id4>3caca0f95790c7965208911f53b1779b</id4>
+				<name>Objekt nahe dem Beschnitt</name>
+				<comment></comment>
+				<flags info="1" analysis="1" edit="1" visible="1"></flags>
+				<conditions>
+					<condition>Cd4c0c019c4acfa7836b520a908c75fb1</condition>
+					<condition>C7d7be48b3182385ab072928a19aeb45b</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rc3fb5206ec4182d850134573e8c1459d</id1>
+				<id2>R0eed9d0d1c9036246a27a7e3b10e0514</id2>
+				<id3>326ab32bed1febc92ff66297d65c1958</id3>
+				<id4>40e7294c80ff080fe168541ea1383f4b</id4>
+				<name>PRCWzDocu_Encrypted</name>
+				<comment>PRCWzDocu_Encrypted</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C4acb0b11dbcc25c4b2a032885ba63b00</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R8a853804311aa828e6ddec904bb14167</id1>
+				<id2>R49fc9de5acfecd337e9333cccae1936b</id2>
+				<id3>5c211c4000fe3bd15ca532b9b384c463</id3>
+				<id4>6d44d88943764fc53e686921766178a6</id4>
+				<name>PRCWzDocu_Damaged</name>
+				<comment>PRCWzDocu_Damaged</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C221fefcffa2ac3a377a314dbd7fc1bc5</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Ref1d79abd18abd77741b52397a54adf7</id1>
+				<id2>R5162b5c495b366984182445726910139</id2>
+				<id3>c2e9e2d38eefcc5f0a168e72a8410c9a</id3>
+				<id4>3f6b0e6334005f9e46edaa181de1ff25</id4>
+				<name>PRCWzPage_SizeOrientDifferent</name>
+				<comment>PRCWzPage_SizeOrientDifferent</comment>
+				<flags info="2" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C84ac4212d12a55ce43d4a95f63cb5b07</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R2847621b18c39dd8064b8d3a305b3e03</id1>
+				<id2>R4b373e6513dfe6dd915bf945eda1ea86</id2>
+				<id3>de06467320ea2639182a2958bc3f65ff</id3>
+				<id4>7d7f9838175c506552b729acafbd7536</id4>
+				<name>PRCWzPage_OnePageEmpty</name>
+				<comment>PRCWzPage_OnePageEmpty</comment>
+				<flags info="1" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C677f322d8adefa9827590cdc0cb17d2f</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R9b824946543a7b7493c2ef4b0ee3186f</id1>
+				<id2>Rd69191a9b161310be770bda424c2eb86</id2>
+				<id3>0dbd718b6309c5222dbaeac8d8097555</id3>
+				<id4>5e56d4380179c49c88f496bbde908d78</id4>
+				<name>PRCWzImag_ResImgLower</name>
+				<comment>PRCWzImag_ResImgLower</comment>
+				<flags info="1" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C71705c23738f038039ba4f355e9fc8a6</condition>
+					<condition>C530c7d55cfd76945c82b05881de50fba</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R0b0d39efeae18937ecc98e8fb5f4f7a1</id1>
+				<id2>Rf789da0eb34976cd95e4bb2c02c62b95</id2>
+				<id3>de534cb98ef1e3f29a221bc885adcc0f</id3>
+				<id4>15a6627450a1992208cdde11ae6104a08d7b478fa5d458333167f9fb63c4c189</id4>
+				<name>PRCWzImag_ResImgUpper</name>
+				<comment>PRCWzImag_ResImgUpper</comment>
+				<flags info="1" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C5d7f68afac4c7307ceb29c20ccf9ae65</condition>
+					<condition>Ce8cb2a4a51c86efa091ea066607ba1e7</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Ra136f048198810bd5795680aedf9327b</id1>
+				<id2>R1331df8c5867727243d9fd6ea8d6dda6</id2>
+				<id3>301315fce1a583187c21be8f2234d248</id3>
+				<id4>11a03c5d4cb14f6d8af22e86344f3736</id4>
+				<name>PRCWzImag_ResBmpLower</name>
+				<comment>PRCWzImag_ResBmpLower</comment>
+				<flags info="1" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C50791829924264ec7828f45fc5a9b504</condition>
+					<condition>C4ae45a04382543ee98a15d8a72ac69a1</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R8ba7016614d99b31ef845b9858f1a589</id1>
+				<id2>R69cc014232b5012c6a25b7d8d0c4bead</id2>
+				<id3>50d3ffca51feb7ee52396a7e31cf9091</id3>
+				<id4>d4b6685d29bf58a8a8bc7a9f541ef27d</id4>
+				<name>PRCWzImag_NotUncompressed</name>
+				<comment>PRCWzImag_NotUncompressed</comment>
+				<flags info="1" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C9f35f7cd48121daf111c16e05e541585</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R7394b4f658a1c985564f0f3ec6c384bc</id1>
+				<id2>R6835d90821139c4c399f7151006859e0</id2>
+				<id3>564680a7e062e2a48074e6a48fda13f5</id3>
+				<id4>ba1996302968d34f0aa054598d06ea0f</id4>
+				<name>PRCWzImag_NotUseOPI</name>
+				<comment>PRCWzImag_NotUseOPI</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C272e74603d4bbbdb5c0a409256c853af</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R731a5d3324183f414d0cde57896f3314</id1>
+				<id2>R283b33331e53df09691597fbd56cd772</id2>
+				<id3>ce75c411b7fbf9d30152b246c58fd900</id3>
+				<id4>6a8ffd71a5b25c1c06336571be46a91522dadab31fa1d28f54cf0a4809978849</id4>
+				<name>PRCWzColr_RGB</name>
+				<comment>PRCWzColr_RGB</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C3e5f4835bc03134420e62807ce044062</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R666dac005c3644d02b5a2f47e9103ded</id1>
+				<id2>R0dabe238614b4c924b217a1adb9e0437</id2>
+				<id3>7634c4d178eec72dfe7830823d400837</id3>
+				<id4>91436ef1a0c01ed7587966784a4e579401635f78190c27eec00fcbd141f4fe51</id4>
+				<name>PRCWzColr_DICS</name>
+				<comment>PRCWzColr_DICS</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>Cf1c30dc0ac8dba3e4c458b8b62781f6c</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rcc831253639c0236613f13a21fd1cd48</id1>
+				<id2>Rdb136170831672e9f12c57fadd7a6cf7</id2>
+				<id3>784f3ad8672175a03949bcd4ef480108</id3>
+				<id4>e7150c0245b4907eb959edb46ec37297</id4>
+				<name>PRCWzColr_InconsistentNaming</name>
+				<comment>PRCWzColr_InconsistentNaming</comment>
+				<flags info="1" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>Cb988d741082ff0e0f1796a71d6ab783c</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rd64c5eb951bcc1151278833dfb29672c</id1>
+				<id2>R74e4782f6393e67f04e4bd8510f4b9eb</id2>
+				<id3>01c56c8b73f3a275cf1548d79023be48</id3>
+				<id4>2de6191088b39df8e1b422c9aa570168</id4>
+				<name>R_66_Font_not_embedded</name>
+				<comment>R_66_Font_not_embedded</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>Cceafe68d4ccd8a637d1d6efe0358fa5f</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R918283f3d927126e1c45e590b1281bb7</id1>
+				<id2>R87e1dfd8d9e2307710706177ff983e87</id2>
+				<id3>57385cf76ce17cd851bb4e30e3be13af</id3>
+				<id4>e3b60f827c09b53307e079a447e0afc4</id4>
+				<name>R_18_Uses_CID_fonts</name>
+				<comment>R_18_Uses_CID_fonts</comment>
+				<flags info="1" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C4703637d4044e721d70d8497198b64f3</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R919f3ca822109f8846fcebbe45a068e0</id1>
+				<id2>R7ce802e42a8c94af513801bc0f3124f3</id2>
+				<id3>3d7664375f2d917b475d4043eb4e2381</id3>
+				<id4>aaff0cbfb583d2f3658efca6db504001</id4>
+				<name>R_19_Uses_CID_Type_2_font</name>
+				<comment>R_19_Uses_CID_Type_2_font</comment>
+				<flags info="1" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C4482860e25f9095b94fc8811676e3861</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R5a03a8a2c2369c525fe5e52a99e50655</id1>
+				<id2>Rdc86edac328fbcb94b892037f160a676</id2>
+				<id3>2099563ec3a2df9b533674c6a7af042f</id3>
+				<id4>68e69b05c46618e4e62ff65a46d4d9f4</id4>
+				<name>PRCWzFont_Type3</name>
+				<comment>PRCWzFont_Type3</comment>
+				<flags info="2" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>Ccd5229f22cd0b64363f2a85a84c7777a</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R9471853bcbd49c17d3cd0a02acc2eb07</id1>
+				<id2>R682ccf424f9292921c9765bba4d8f554</id2>
+				<id3>5dc462a488c15e4ef0c227a2df1096df</id3>
+				<id4>1531f647d27455fb53b847c079fe05c2</id4>
+				<name>PRCWzFont_OpenType</name>
+				<comment>PRCWzFont_OpenType</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>Cc2a2a6b52735854a9ef9db91690e1f88</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Raeff1f6bcab4634567ba90bad34aead8</id1>
+				<id2>R2baaf04045effb0679f8868460ee0c1b</id2>
+				<id3>3c3139a6037275c33b2ca8cf09f2b58b</id3>
+				<id4>b59e7b0330a2d14201b52dc4b7b1a257</id4>
+				<name>R_5_Uses_transparency</name>
+				<comment>R_5_Uses_transparency</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>Ce396db3a8a3c89db9e3882308759063d</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>Rc122731af68a587e62f93dee132e8e86</id1>
+				<id2>Re64ad0c729b3c772ceb8b68a7ce84e76</id2>
+				<id3>477d1230d753889b041bdc05537efad9</id3>
+				<id4>e074399c629af93969a252148e6afdc9</id4>
+				<name>R_8_Uses_halftone</name>
+				<comment>R_8_Uses_halftone</comment>
+				<flags info="2" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>Cdc2c8de601038aaa32ba314d4aa8ad37</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R5ca584fcb512f0e0f6ceffd99334e296</id1>
+				<id2>Rffde039a2db3ec5e2b61acd7eb5f088e</id2>
+				<id3>f68e3cb0219b0e1ded84ad2d5909f80c</id3>
+				<id4>849efe88d4fe083125d8107b46c74c73</id4>
+				<name>R_6_Uses_transfer_curve</name>
+				<comment>R_6_Uses_transfer_curve</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C960dcaab3db8b66526a9a5d3147f72c0</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R5d8f9f2ed2823e9cf0ee53a5f441e429</id1>
+				<id2>R1874757f6d711a924a59c8fafc8a001d</id2>
+				<id3>0394318fdc2230d7f42ccddeafb3aa01</id3>
+				<id4>f450a1ede12b41b66ed36439f48bc0f952ee09fa77a61172568c1c5e4da32e33</id4>
+				<name>PRCWzRend_Thickness</name>
+				<comment>PRCWzRend_Thickness</comment>
+				<flags info="2" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>Cd425f78735ff3b8f1b9c783454fd32f6</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R79195071f1a5cf4d1474e0fb9d7c0a6e</id1>
+				<id2>R027e631253a0511531c32547b5ea8442</id2>
+				<id3>77eca9b55aa2df5f2ca46548b08a62b6</id3>
+				<id4>59b9a23632795695320597a8ad8993bb</id4>
+				<name>R_68_Embedded_PostScript_operato</name>
+				<comment>R_68_Embedded_PostScript_operato</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C87d1797e71ae0a96f9e5817912c98d61</condition>
+				</conditions>
+			</rule>
+			<rule>
+				<id1>R11f4bcc3952db61fc9ba32fec537e87b</id1>
+				<id2>R4ba0205931c460a8f2231fa6ca9578c2</id2>
+				<id3>5db6c94d87112ecbdeb651a5e61fb402</id3>
+				<id4>bd858a48fe03b362ff76b10d0694d92c</id4>
+				<name>R_69_Embedded_PostScript_XObject</name>
+				<comment>R_69_Embedded_PostScript_XObject</comment>
+				<flags info="3" analysis="1" edit="1" visible="1" wizard="1" dict="1"></flags>
+				<conditions>
+					<condition>C187bb1b6eb9a8b213f3364671d0717c4</condition>
+				</conditions>
+			</rule>
+		</rules>
+		<profiles>
+			<profile>
+				<id1>P4d41a980aaad6f2ac7a0ed8b232694e1</id1>
+				<id2>P4f19c6a80357ffc955ec9b35e8d1c665</id2>
+				<id3>3e1d875cb52ba4630b4a91293388662f</id3>
+				<id4>3bee3c1c6caaf805f55c1a19c15b51ad</id4>
+				<name>Aufbereitet für PDFX, nur CMYK, Offsetdruck</name>
+				<comment>Version 2.8: November 2006, Bildauflösung 225/600, Haarlinie 0,125 pt, Farbraum: DeviceCMYK und DeviceGray</comment>
+				<flags edit="1" visible="1" wizard="1"></flags>
+				<creation>D:20061124151605+01&apos;00&apos;</creation>
+				<modification>D:20061124151605+01&apos;00&apos;</modification>
+				<pdfx>
+					<convert>0</convert>
+					<compliance>0</compliance>
+					<outcond>ISO Coated</outcond>
+					<trapped>1</trapped>
+				</pdfx>
+				<metalist>
+					<metadata>
+						<metakey>author</metakey>
+						<metavalue>Peter Kleinheider | callas software</metavalue>
+					</metadata>
+					<metadata>
+						<metakey>email</metakey>
+						<metavalue>p.kleinheider@callassoftware.com</metavalue>
+					</metadata>
+					<metadata>
+						<metakey>rating</metakey>
+						<metavalue>1</metavalue>
+					</metadata>
+				</metalist>
+				<rules>
+					<rule>R9ba9abebadf8616b99a74597d6c42a0d</rule>
+					<rule>R7bf65baea7b0d3b2480d29680a790397</rule>
+					<rule>R7184448d1ca3dcc56feb57386c4125b7</rule>
+					<rule>Rf7a7abb86a4b4ed494c5c27b59d0800b</rule>
+					<rule>R4b2e867827d509851bed7b7c1acc320d</rule>
+					<rule>R924c2a6318b1897913725eb9ed9aac62</rule>
+					<rule>R813564ca29f88d3d8437b3127599f45e</rule>
+					<rule>R9a96ed37ed1c2a1fa08eb1bc8642272e</rule>
+					<rule>R7211bd99ec331764281396a7d3277798</rule>
+					<rule>R14fef533c551ce1e9f672614118c462c</rule>
+					<rule>Rfb011c899ff8355febc5d38936215e7a</rule>
+					<rule>R5cf1c95deaf59f52d964cb60006226b5</rule>
+					<rule>Rec30be58687e0410509ebf338455390e</rule>
+					<rule>R3034fff9d4df126da5ac2d65bfefa846</rule>
+					<rule>R20302b2135729bdcf119cb6e2a284408</rule>
+					<rule>R4981f9957537acd31c736bad1f52aed0</rule>
+					<rule>Rbc7d94cfd8faa774bbd5cee12458a13d</rule>
+					<rule>Rda6ad7e185778e5c88ceb20a03427fa3</rule>
+					<rule>R24a955eab548e23b07a331ce96ceea6e</rule>
+					<rule>R9763f63c793539432d45fa77d07c87a7</rule>
+					<rule>R1d514842364602876662303e3fd21592</rule>
+					<rule>R7700d9ae190919aa27e9fb7a2ebdddad</rule>
+					<rule>R6b65bc0020a7209f555d32630c541451</rule>
+					<rule>R10baf10f9b7e0be41714bdde398ee978</rule>
+					<rule>R9713cb5ced2b4b101621726940c929aa</rule>
+					<rule>R837357fd1ae52ddea6960c492220393f</rule>
+					<rule>R1614cbbbd4c2f20cb09b26f4d6841465</rule>
+					<rule>Rb80c579a99116a1c366be3a6ac7e1bd5</rule>
+					<rule>R7c09d5e1bbb0cbed15ae5a349715e0ce</rule>
+					<rule>R46217e9fd4ada7e3b08a4621e0a7bcc1</rule>
+					<rule>R615b0d00c05f0bdb4a6cf11c60787b2f</rule>
+					<rule>R375fdc7f50cc83baa8d4c08105022d8b</rule>
+					<rule>R45b19464717e5fbe5b93b142b5e42559</rule>
+					<rule>R6e02bd0796d9e522384a3ed122f65e3c</rule>
+					<rule>R4863813c107f546a2c3c0efb6ebf52fb</rule>
+					<rule>R71b017b69f3ea3bd422ce27c01269d61</rule>
+					<rule>R25352dc6cb4677d0a7a7d974ad1d658b</rule>
+					<rule>R6b1deb6774b0022d7f80ac4bb9b6a118</rule>
+					<rule>Rb42162e4ef4bf74dd4d3019fdcd7cad9</rule>
+					<rule>Rbd22c140ec9c23d07f3cf52838772f2b</rule>
+					<rule>Rc13a5cf01d99c3d4d4497a5df3283b0a</rule>
+					<rule>R2ae781043f7bb8b1f637e76aa0516b63</rule>
+					<rule>R8ddf952c9c057fcf15ebb83eb87e9661</rule>
+					<rule>Rf08615cbd554172ba47c65eb88347572</rule>
+					<rule>Rb162020f57ab2e7e44088e334223889e</rule>
+					<rule>Rc3fb5206ec4182d850134573e8c1459d</rule>
+					<rule>R8a853804311aa828e6ddec904bb14167</rule>
+					<rule>Ref1d79abd18abd77741b52397a54adf7</rule>
+					<rule>R2847621b18c39dd8064b8d3a305b3e03</rule>
+					<rule>R9b824946543a7b7493c2ef4b0ee3186f</rule>
+					<rule>R0b0d39efeae18937ecc98e8fb5f4f7a1</rule>
+					<rule>Ra136f048198810bd5795680aedf9327b</rule>
+					<rule>R8ba7016614d99b31ef845b9858f1a589</rule>
+					<rule>R7394b4f658a1c985564f0f3ec6c384bc</rule>
+					<rule>R731a5d3324183f414d0cde57896f3314</rule>
+					<rule>R666dac005c3644d02b5a2f47e9103ded</rule>
+					<rule>Rcc831253639c0236613f13a21fd1cd48</rule>
+					<rule>Rd64c5eb951bcc1151278833dfb29672c</rule>
+					<rule>R918283f3d927126e1c45e590b1281bb7</rule>
+					<rule>R919f3ca822109f8846fcebbe45a068e0</rule>
+					<rule>R5a03a8a2c2369c525fe5e52a99e50655</rule>
+					<rule>R9471853bcbd49c17d3cd0a02acc2eb07</rule>
+					<rule>Raeff1f6bcab4634567ba90bad34aead8</rule>
+					<rule>Rc122731af68a587e62f93dee132e8e86</rule>
+					<rule>R5ca584fcb512f0e0f6ceffd99334e296</rule>
+					<rule>R5d8f9f2ed2823e9cf0ee53a5f441e429</rule>
+					<rule>R79195071f1a5cf4d1474e0fb9d7c0a6e</rule>
+					<rule>R11f4bcc3952db61fc9ba32fec537e87b</rule>
+				</rules>
+			</profile>
+		</profiles>
+	</package>
+</pdfpreflight>
