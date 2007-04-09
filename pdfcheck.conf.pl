@@ -20,7 +20,7 @@
 # with a fresh callas version:
 # pdfinsp => '/usr/local/pdfInspektor3_CLI/pdfInspektor3',
 # with remote execution:
-# pdfinsp => 'ssh fserver.sjintra.net \'/usr/local/pdfInspektor3_CLI/pdfInspektor3',
+# pdfinsp => 'ssh server.intra.net \'/usr/local/pdfInspektor3_CLI/pdfInspektor3',
 
 # don't show progress info, always overwrite
 pdfinspopt => '--ignorehash --noprogress --o',
@@ -72,7 +72,7 @@ ok => 'OUT',
 # output directory for 0 errors, 1 or more warnings
 # you may use the same directory as for "error"
 # don't leave empty!
-warning => 'SCHAU',
+warning => 'WARNING',
 
 # output directory for 1 or more errors
 # you may use the same directory as for "warning"
@@ -100,7 +100,7 @@ copy => 'ORIG',
 
 # 1: input directory is a subdirectory (DIR:IN, DIR:ERROR, DIR:OUT)
 # 0: subdir is on top of output directories (IN, IN:ERROR, IN:OUT)
-insubdir => 1,
+insubdir => 0,
 
 # effective only for notification script
 # 1: always exit with success
