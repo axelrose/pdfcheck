@@ -1,4 +1,14 @@
 ------------------------------------------------------------------------
+r8 | axel.roeslein | 2007-04-09 16:27:45 +0200 (Mo, 09 Apr 2007) | 3 lines
+
+Umgebungsvariablen ueberschreiben Grundkonfigurationsparameter
+Beispielkonfiguration mit "reportlang"
+
+------------------------------------------------------------------------
+r4 | axel.roeslein | 2007-04-05 17:39:31 +0200 (Do, 05 Apr 2007) | 1 line
+
+call patchscript with additional argument $conf->{reportlang} to make selection of language dependend xsl file possible
+------------------------------------------------------------------------
 r204 | rose | 2007-04-04 15:21:16 +0200 (Mi, 04 Apr 2007) | 1 line
 
 Bug Kompensator fuer falsche Ausgabe von "prefvalue" bei Hotfolder Skriptpfaden mit Sonderzeichen
