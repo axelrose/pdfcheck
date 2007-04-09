@@ -647,6 +647,12 @@ sub getconf {
 	my $conf = do $cfile;
 	die "FATAL: parse error in '$cfile'\n$@" if $@;
 
+	for my $envkey (keys %ENV) {
+		if( exists $conf->{$envkey} ) {
+			$conf->{$envkey} = $ENV{$envkey}
+		}
+	}
+
 	return $conf;
 }
 
@@ -806,7 +812,7 @@ sub heladminhelp {
 <SETTINGS>
 <General
         Enable="true"
-        Hot_Folder="/Volumes/PDF/X3/Offset"
+        Hot_Folder="/choose/your/path"
         Include_Subdirectories="false"
         User="root"
         Timeout="0"
@@ -818,6 +824,7 @@ sub heladminhelp {
 />
 <Environment
         PDF_PROFILE="Proof Profiles/Defaults/profiles/Digital press (color).kfp"
+		reportlang="de"
 />
 </SETTINGS>
 }
