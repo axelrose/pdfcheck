@@ -96,6 +96,20 @@ EtherShare 4th ist ausreichend, wenn man entweder eine eigene Version des
 pdfInspektor3CLI besitzt oder über SSH pdfInspektor3 auf einer anderen
 Maschine im Netzwerk aufruft.
 
+Im Hotfolder Betrieb können die Konfigurationsparameter durch eine eigene
+Konfigurationsdatei im Eingabeordner oder dessen Vaterordner angepaßt werden.
+pdfcheck.pl sucht nach irgendwelchen Dateien, die mit "conf.pl" enden und
+benutzt die zuerst gefundene. Ein Beispiel wird durch "my.conf.pl" mitgeliefert.
+
+Ab der Version vom April 2007 kann jeder einzelne Parameter noch als Umbegungs-
+variable vorgegeben werden, z.B. kann reportlang=en.
+
+Es gelten folgende Regeln für den Vorrang:
+
+1. my.conf.pl im Hotfolder selber, siegt über alle Voreinstellungen
+2. Umbebungsvariable überschreibt die Konfiguration der Skriptinstallation
+3. pdfcheck.conf.pl parallel zur pdfcheck.pl Installation gilt sonst
+
 
 4. Profil-Auswahl
 
@@ -240,6 +254,20 @@ Ethershare 4th is sufficient if you have your own installation of
 pdfInspektor3CLI or if you use pdfInspektor3 through SSH on a
 different host in your network.
 
+When hotfolder workflow is active configuration can be customized through
+a configuration file within the hotfolder itself or its parent folder.
+pdfcheck.pl searches for any file ending with "conf.pl" and chooses the
+first found. A sample file "my.conf.pl" comes with the distribution archive.
+
+From version of April 2007 on each single parameter can be set as environment
+variable, e.g. reportlang=en
+
+The precedence rules are:
+
+1. "my.conf.pl" within the hotfolder wins over all other settings
+2. enviroment variables overwrite settings from the script installation file
+3. "pdfcheck.conf.pl" as found in the same folder as "pdfcheck.pl"
+
 
 4. Profile selection
 
@@ -295,6 +323,6 @@ itself.
 
 ################################################################################
 #                                                                              #
-# Version: $Id$                        #
+# Version: $Id$                 #
 #                                                                              #
 ################################################################################
