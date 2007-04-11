@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- Version 104 -->
+<!-- Icons for PDF document, Info, Warning and Error -->
+
 <!-- Version 103 -->
 <!-- Zeit der Prüfung aus Node I2InfoDate im Kopf des Reports -->
 <!-- XSL-Version als HTML Kommentar -->
@@ -40,7 +43,7 @@
 					</xsl:when>
 
 					<xsl:otherwise>
-						<h2>No irregularities where found during the preflight check</h2>
+						<h2><xsl:call-template name="OKIMG"/> No irregularities where found during the preflight check</h2>
 					</xsl:otherwise>
 
 
@@ -122,7 +125,7 @@
 		<table width="90%" border="0" cellpadding="3" cellspacing="0">
 
 			<tr>
-				<td colspan="2" class="headline">checked PDF file: 
+				<td colspan="2" class="headline"><xsl:call-template name="PDFIMG"/> checked PDF file: 
 					<xsl:value-of select="//FSFile/Value"/>
 				</td>
 			</tr>
@@ -491,15 +494,15 @@
 
 			<tr class="headline">
 				<xsl:if test="$severity='info'">
-					<td colspan="3" class="infohead">INFO (<xsl:value-of select="count($node)"
+					<td colspan="3" class="infohead"><xsl:call-template name="InfoIMG"/> INFO (<xsl:value-of select="count($node)"
 					/>)</td>
 				</xsl:if>
 				<xsl:if test="$severity='error'">
-					<td colspan="3" class="errhead">ERROR (<xsl:value-of select="count($node)"
+					<td colspan="3" class="errhead"><xsl:call-template name="ErrorIMG"/>ERROR (<xsl:value-of select="count($node)"
 					/>)</td>
 				</xsl:if>
 				<xsl:if test="$severity='warning'">
-					<td colspan="3" class="warnhead">WARNING (<xsl:value-of select="count($node)"
+					<td colspan="3" class="warnhead"><xsl:call-template name="WarnIMG"/> WARNING (<xsl:value-of select="count($node)"
 					/>)</td>
 				</xsl:if>
 			</tr>
@@ -565,6 +568,58 @@
 		
 	</xsl:template>
 	
+	<xsl:template name="ErrorIMG">
+		<img
+			src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAANbY1E9YMgAAABl0RVh0
+			U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAPUExURfSssOxfU8AfJ98AJP///2Fiq0oA
+			AABWSURBVHjaXI9bEsAwCAKJ2/ufuY1oHuVDwTHuRM9PmgV7egBpGXjA58g8m5xRVsIbU5X7hhVN
+			0c6FzX20sKPfFHblwvq+uLCxmrF5/8CGP7exp14BBgDH3wNZEIaK+gAAAABJRU5ErkJggg==
+			" alt="Error" width="16" height="16" />
+	</xsl:template>
+	
+	<xsl:template name="WarnIMG">
+		<img
+			src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAANbY1E9YMgAAABl0RVh0
+			U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAVUExURf785f77iO+cAPbFA/fnBQAAAP//
+			/3eozhwAAABbSURBVHjadI9BCsBACAOjif3/k7tmpWULzUUcMoK4PsFM6gRKnoAP2YABpl4gomoq
+			2IWoGgk+EFqAJmgh1GBVZNC7gSVYmLQEC9NoCRQ7VR5J5Bni79sntwADAJULBJwmJOTFAAAAAElF
+			TkSuQmCC
+			" alt="Warning" width="16" height="16" />
+	</xsl:template>
+	
+	<xsl:template name="InfoIMG">
+		<img
+			src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAANbY1E9YMgAAABl0RVh0
+			U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAASUExURQdqs6bY9m265SRVpgCR1f///8zj
+			BTAAAABgSURBVHjaXI9REgAhCEJR7P5XXtGtnPhw8hmMYj1CVfOUXeAeEjZQm7+aoHovH4MC5uEH
+			WAL1ZWF62ECBZBygeYVekI9r0SR+UKELbRFiL4ZMbO3VSUB0HKfxOG7qE2AACNgDy2qK04YAAAAA
+			SUVORK5CYII=
+			" alt="Info" width="16" height="16" />
+	</xsl:template>
+	
+	<xsl:template name="OKIMG">
+		<img
+			src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAANbY1E9YMgAAABl0RVh0
+			U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAtUExURV2NOHi5TrXjzJPKY7ryelytQ+Lv
+			5tHgy7OzskhqHv75/HLBiQScNgN0Nv///+08dwAAAABfSURBVHjaXM5ZAoAgCATQKbUNhvsfN5dS
+			lL83iADzJWaYTJmCbAq8gyqxeLzYuRX3P5r3suWoY9Wlg5tgMEmfDVRRRvzOI9SM7hyc1DRctlyu
+			X4MHHG53MC6Br1eAAQC0VAyjnnhF9QAAAABJRU5ErkJggg==
+			" alt="OK" width="16" height="16" />
+	</xsl:template>
+	
+	<xsl:template name="PDFIMG">
+		<img
+			src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAANbY1E9YMgAAABl0RVh0
+			U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABdUExURf8wOdYAAM5ZWv9xc4yOjP9hY/+u
+			rSkoKf8gKf8QEL2+xueOjO/f3u/v9722vVpZWu+enKWmpe+2tda2te/3//dJSvcAADEwMcbHzowI
+			CBAQEHtxe97X3u/v7////+DWxbMAAACTSURBVHjaTM3ZFoMgDATQoOCuXWnQJvP/n2nQ0nZe4NzA
+			hAC8S+wOypCGYVhuXjhDHWKMRNQ5D3AG6vqXxa35B4NC12dwbvXW4pncWqIpLWk7SiWJVKJi5wl2
+			RVRVSVpAJ7rCpICinscGfzDFpomxGnECUN2nJ+ZHKC9spEfpZ0uoc6H81uKcf+HCzC237ZazCzAA
+			yVsW+WGRPIUAAAAASUVORK5CYII=
+			" alt="PDF File" width="16" height="16" />
+	</xsl:template>
+	
+	
 	<xsl:template name="SubstringReplace">
 		<xsl:param name="stringIn"/>
 		<xsl:param name="substringIn"/>
@@ -584,4 +639,4 @@
 		</xsl:choose>
 	</xsl:template>
 </xsl:stylesheet>
-
+
