@@ -1,0 +1,414 @@
+------------------------------------------------------------------------
+r10 | pk.maillist | 2007-04-11 10:58:03 +0200 (Mi, 11 Apr 2007) | 1 line
+
+Version 104 of xsl: Icons for PDF document, Info, Warning and Error
+
+------------------------------------------------------------------------
+r8 | axel.roeslein | 2007-04-09 16:27:45 +0200 (Mo, 09 Apr 2007) | 3 lines
+
+Umgebungsvariablen ueberschreiben Grundkonfigurationsparameter
+Beispielkonfiguration mit "reportlang"
+
+------------------------------------------------------------------------
+r4 | axel.roeslein | 2007-04-05 17:39:31 +0200 (Do, 05 Apr 2007) | 1 line
+
+call patchscript with additional argument $conf->{reportlang} to make selection of language dependend xsl file possible
+------------------------------------------------------------------------
+r204 | rose | 2007-04-04 15:21:16 +0200 (Mi, 04 Apr 2007) | 1 line
+
+Bug Kompensator fuer falsche Ausgabe von "prefvalue" bei Hotfolder Skriptpfaden mit Sonderzeichen
+------------------------------------------------------------------------
+r202 | rose | 2007-03-29 21:41:41 +0200 (Do, 29 Mär 2007) | 1 line
+
+scriptpath bei Skripten unterhalb von var/settings/Script Server/ korrekt ermittelt
+------------------------------------------------------------------------
+r199 | rose | 2007-03-27 12:52:10 +0200 (Di, 27 Mär 2007) | 3 lines
+
+$copydir bleibt undefiniert, wenn $conf->{copy} nicht oder leer gesetzt ist
+damit kommen keine Warnungen "Unitialized value" mehr und Rekursion wird nicht mehr falsch erkannt
+bei unmöglicher Namenskürzung (Zieldatei exisitert bereits) wird mit dem alten Namen weitergearbeitet, statt die bereits vorhande Datei zu nutzen
+------------------------------------------------------------------------
+r198 | rose | 2007-03-25 14:59:19 +0200 (So, 25 Mär 2007) | 1 line
+
+neue Option "discarderrinput", um Input Dateien, die mit Fehler geprueft werden, zu verwerfen
+------------------------------------------------------------------------
+r197 | rose | 2007-03-23 17:52:38 +0100 (Fr, 23 Mär 2007) | 1 line
+
+myquote() statt \Q$string\E, weil letzteres UTF-8 Zeichen byteweise bearbeitet, quickfix!
+------------------------------------------------------------------------
+r193 | rose | 2006-12-19 00:17:14 +0100 (Di, 19 Dez 2006) | 1 line
+
+$scriptpath wurde auch bei Benachr. Skripten ausgewertet und dadurch auf unpassende Benuterzkonfigurationen und Profile zugegriffen (entstanden nur in Zwischenversion vom 18.12.2006)
+------------------------------------------------------------------------
+r186 | rose | 2006-12-18 15:11:35 +0100 (Mo, 18 Dez 2006) | 1 line
+
+Rekursion ueber $scriptpath testen
+------------------------------------------------------------------------
+r182 | rose | 2006-12-17 23:15:07 +0100 (So, 17 Dez 2006) | 18 lines
+
+Pruefung auf Konfigurationsaenderungen korrigiert, so dass auch bei
+Hotfolder Skripten mit verschachtelten Unterordnern die Datei .conf.pl
+im ueberwachten Haupteingabe Ordner gefunden wird (dito fuer .kfp
+Profildateien im Hotfolder)
+
+absolute Pfadangaben fuer ok/warning/error/copy werden abgelehnt, wenn
+'userdirout'(Benutzerverzeichnisse mit Platzhaltern) genutzt wird, sonst
+aber jetzt korrekt umgesetzt (Paul Sponner)
+
+unnoetiges Bewegen der Eingabedatei und dadurch verursachte Neubenennung
+nach .1.pdf uebersprungen, wenn warning/error dir gleich dem Eingabe-
+verzeichnis sind (Peter Kleinheider)
+
+Ausstieg mit confess(), wenn /etc/HELIOSInstallPath nicht lesbar ist
+
+Tuning bei findfile(), bereits durchsuchte Verzeichnisse werden uebergangen
+
+Debug Ausgaben auch ueber Konfigurationsoption 'debug' einschaltbar
+------------------------------------------------------------------------
+r179 | rose | 2006-12-07 15:46:29 +0100 (Do, 07 Dez 2006) | 3 lines
+
+bei Fehlerausgang aus Pruefung wird ein ggf. erkannter Schluessel
+im Dateinamen nicht enfernt
+
+------------------------------------------------------------------------
+r177 | rose | 2006-12-05 14:52:36 +0100 (Di, 05 Dez 2006) | 37 lines
+
+Rekursion auch bei Gleichheit indir mit copydir und errdir vermeiden
+
+modconf() weiter nach vorne gezogen, sonst werden Benutzer Konfigurationen fuer
+einige Variablen (heliosdir, pdfinsp, ...) nicht beruecksichtigt
+
+errlog hiess teilweise "_ERROR.log" und ".ERROR.log" (TODO: vereinheitlichen
+und konfigurierbar machen)
+
+Profil Erkennungsschluessel wird gross-/kleinschreibungsunabhaengig gefunden
+
+Fehlerprotokoll mit vollstaendigem Basisnamen der Eingabedatei (Suffix .pdf
+fehlte)
+
+Fehler bei Profilerkennung ueber Dateinamen werden mit in die Fehlerprotokoll
+Datei geschrieben
+
+"file.ERROR.txt" wird bei Neubenennung "file.1.ERROR.txt" (bisher
+"file.ERROR.1.txt")
+
+alten Namen vor Abtrennung eines Profil Erkennungsschluessels im Dateinamen
+(profkeyremove) merken und im Fehlerfall wieder anhaengen
+
+Protokoll Datei bei Fehlerabbruch mit vollstaendigem Basisnamen der
+Eingabedatei (der Profil Erkennungsschluessel im Dateinamen war rausgekuerzt)
+
+Cache fuer Ergebnisse von teuren realpath(), recursivescript() Aufrufen
+
+Kommplett Umbau von namer( fromfile, todir) auf flexiblere Form
+namer( wunschdateiname )
+
+Fehlerprotokolltext mit vollstaendigem Basisnamen der Eingabedatei (Suffix
+'.pdf' fehlte)
+
+wenn copydir = inputdir ist, wird das Original dort ohne Umbenennung und mit
+Beibehaltung der Zeitstempel belassen
+
+
+------------------------------------------------------------------------
+r166 | rose | 2006-11-23 17:27:41 +0100 (Do, 23 Nov 2006) | 6 lines
+
+use Carp
+
+errtext() und infotext() zu logtext() zusammengefasst
+
+findfile() Schnittstelle geandert
+
+------------------------------------------------------------------------
+r165 | rose | 2006-11-23 11:03:05 +0100 (Do, 23 Nov 2006) | 1 line
+
+Shell Wrapper aktiviert
+------------------------------------------------------------------------
+r162 | rose | 2006-11-22 15:11:42 +0100 (Mi, 22 Nov 2006) | 1 line
+
+interner Fehler bei Benachr.skript Aufruf
+------------------------------------------------------------------------
+r159 | rose | 2006-11-22 14:50:10 +0100 (Mi, 22 Nov 2006) | 19 lines
+
+neuer Konfigurations Parameter 'userdirhf'
+bewirkt, dass auch im Hotfolder Betrieb die benutzerspezifischen Umlenkungen
+der Ausgabe entsprechend 'userdirout' zum Zuge kommen
+Benutzername wird aus Namen des Eingabe Ordners abgeleitet
+
+Desktop Events (dt cp -E) werden vermieden, wenn die Konfiguration eine
+Ausgabe im Eingabe Ordner vorsieht
+
+keine Desktop Events, wenn der Ausgabe Ordner durch ein rekursiv
+konfiguriertes Hotfolder Skript ueberwacht wird
+
+postprocessing Skript bekommt bei gesetztem 'userdirhf' als Parameter -u den
+Benutzerordnernamen uebergeben
+
+Fehlerbeseitigung (war ab Version vom 12.10.2006, Id 132 reingerutscht):
+.kfp oder .conf.pl Datei wird auch im Vaterordner des Eingabeordners gefunden
+(ist wichtig fuer Ausgabe in Benutzerordner)
+
+
+------------------------------------------------------------------------
+r157 | rose | 2006-11-21 11:00:54 +0100 (Di, 21 Nov 2006) | 14 lines
+
+per Cwd::realpath() auswerten, ob okdir == indir und -E Option an dt Befehle
+ausfiltern, um Endlos Schleife durch neuen Desktop Event zu verhindern
+
+Fehlermeldung ueber nicht auffindbares Profil mit in ERROR.txt Datei
+Fehlermeldung bei Pruefung mit Fehlerausgang des pdfInspektor vollstaendiger
+
+saubere Fehlermeldung bei Abbruch pdfInspektor3 mit Signal oder Core Dump
+
+keine irrefuehrende Fehlermeldung (file not found) mehr, wenn Konfigurations
+Datei Parse Fehler hat
+
+Fehlermeldungen mit vollstaendigem Pfad zur Eingabedatei
+
+
+------------------------------------------------------------------------
+r149 | rose | 2006-11-08 18:13:26 +0100 (Mi, 08 Nov 2006) | 8 lines
+
+Versions Info immer als erstes ausgeben
+
+Konfigurationsparameter "dontcopyerrors" ist jetzt wirksam (verhindert, dass
+Kopien der Eingabedatei in copydir landen, wenn ein Fehler bei der PDF
+Pruefung auftrat)
+
+Abbruch, wenn pdfInspektor mit kill oder core dump beendet wird
+
+------------------------------------------------------------------------
+r147 | rose | 2006-11-03 16:22:41 +0100 (Fr, 03 Nov 2006) | 19 lines
+
+postprocess und txtpatchscript Skripte mit absoluten Pfad moeglich
+
+postprocess und txtpatchscript Skripte werden direkt ueber system() aufgerufen,
+wenn sie ausfuehrbar sind
+sind sie nicht ausfuehrbar, wird die Shell benutzt, die optional konfigurierbar ist
+ist keine Shell konfiguriert, wird der gleiche Perl Interpreter genommen, mit dem
+auch pdfcheck.pl selber gestartet wurde
+
+fuer postprocess Skript wird die gesamte pdfcheck Konfiguration ueber das
+Environment zugaenglich gemacht, z.B. steht "error => 'ERROR'" in einem
+moeglichen Shell Programm als $pdfcheck_error zur Verfuegung
+Array Referenzen werden als kommagetrennte Liste von Werte geliefert,
+Hash Referenzen als kommagetrennte Liste von Schluessel1, Wert1, ...
+
+bei vorzeitigem Abbruch, ohne dass die Konfiguration bereits eingelesen
+war, kam es zu einer irrefuehrenden Fehlermeldung
+
+unnoetige Debug Ausgabe raus
+
+------------------------------------------------------------------------
+r144 | rose | 2006-10-24 17:54:26 +0200 (Di, 24 Okt 2006) | 10 lines
+
+wurde eine PDF/X-3 Erzeugung mit Fehlern abgebrochen, ist die IN Datei nicht mit
+in den ERROR Ordner kopiert (klappte nur bei Profilen ohne X-3 Konvertierung)
+
+bei Fehler Abbruechen des pdfInspektor3 wurde die Log Datei nicht ganz korrekt
+umbenannt (_ERROR.txt und dann _ERROR.txt.1 statt wie jetzt richtig _ERROR.1.txt)
+
+Datum, Skriptname und Prozess ID mit in ERROR.txt Datei
+
+.ERROR.txt statt _ERROR.txt
+
+------------------------------------------------------------------------
+r135 | rose | 2006-10-18 13:05:50 +0200 (Mi, 18 Okt 2006) | 23 lines
+
+Bug behoben: leere Konfiguration fuer 'txtpatchscript' verhinderte Text Reports komplett
+
+Autor, Jahr mit in Kopfzeile
+
+PDF_PROFILE Vorgabe fuer Skriptkonfiguration mit Helios Admin mit relativem Pfad
+
+automatische Ermittlung Helios Basisverzeichnis aus /etc/HELIOSInstallPath
+
+default tmpdir = /tmp, wenn nicht anders konfiguriert
+
+default pdfinsp = HELIOSDIR/callas/pdfinspektor3, wenn nicht anders konfiguriert
+
+relativer Pfad fuer alle Profilvorgaben
+
+Aufspaltung der Profilerkennung am Dateinamen in vereinfachten Suchausdruck,
+z.B. '4c|tz' und als Standard mit '(\.pdf)*$' vorgegebener Endung
+
+Optional Profilerkennungsschlüssel (z.B. '4c') aus dem Dateinamen enfernen -
+konfiguriert ueber 'profkeyremove'
+
+Endung '.pdf' wurde bei Neubenennung von Dateien nicht berücksichtigt -
+es enstanden 'file.pdf' und 'file.pdf.1' statt wie jetzt 'file.1.pdf'
+
+------------------------------------------------------------------------
+r132 | rose | 2006-10-12 17:54:13 +0200 (Do, 12 Okt 2006) | 1 line
+
+findfile korrigiert und optimiert nach Fehlern bei Dirk Seibert
+------------------------------------------------------------------------
+r128 | rose | 2006-09-28 14:40:40 +0200 (Do, 28 Sep 2006) | 1 line
+
+BSD Lizenz
+------------------------------------------------------------------------
+r124 | rose | 2006-09-27 12:49:37 +0200 (Mi, 27 Sep 2006) | 1 line
+
+copydir nur Anlegen, wenn Option fuer copy gesetzt ist; postprocess Programm mit Optionsschaltern aufrufen
+------------------------------------------------------------------------
+r108 | rose | 2006-09-26 11:35:38 +0200 (Di, 26 Sep 2006) | 4 lines
+
+Einarbeitung der Erweiterungen von Peter Kleinheider
+(copy dir, nur ein Profil, Variabilität bei Benutzerordner, prefixremove,
+Profilauswahl nach Druckdateinamen)
+diverse Korrekturen
+------------------------------------------------------------------------
+r103 | rose | 2006-08-28 15:55:08 +0200 (Mo, 28 Aug 2006) | 5 lines
+
+Vereinheitlichung der Protokoll Meldungen
+
+evt. Fehler beim Aufruf von patch_txtreport() uebergehen
+
+
+------------------------------------------------------------------------
+r102 | rose | 2006-08-21 15:45:44 +0200 (Mo, 21 Aug 2006) | 1 line
+
+einheitliche Log Meldung bei PDF check mit Fehlern
+------------------------------------------------------------------------
+r101 | rose | 2006-08-18 15:43:49 +0200 (Fr, 18 Aug 2006) | 16 lines
+
+HELIOSDIR/var/run/runperl als Perl Interpreter benutzen
+dieser ist teilweise auch mit UB noch auf Stand Perl 5.0 (Solaris 8)
+
+DEBUG=0
+
+Beim Einsatz als Notication Script wird durch exit 1 bewirkt, daß
+bei fatalen Fehlern wie bei Fehlern von PDF Report eine Helios
+Standard Benachrichtigung an den Client geht und die Eingabe PostScript
+Datei in der konfigurierte Error Queue landet
+Abschaltbar mit $conf->{exit0} = 1
+
+Dateinamen ohne Quotes in open()
+
+sub logit kann auch expliziten Ausstieg mit exit 0 ausführen
+
+
+------------------------------------------------------------------------
+r99 | rose | 2006-08-17 11:53:53 +0200 (Do, 17 Aug 2006) | 3 lines
+
+Zusatzprüfung, ob PDF_PROFILE oder .kfp Datei im Eingabeordner auch wirklich eine Datei ist
+(fehlerhafter Durchlauf, wenn PDF_PROFILE/.kfp ein Verzeichnis war)
+
+------------------------------------------------------------------------
+r95 | rose | 2006-08-14 16:15:19 +0200 (Mo, 14 Aug 2006) | 7 lines
+
+Perl Version aus HELIOS Verzeichnis aufrufen
+open() mit Perl 5.0 kompatibel
+utf8.pm nicht verwenden, wg. evt. nur vorhandener Perl 5.0 Version
+
+möglicher Aufruf eines mit conf->{postprocess} konfigurierten
+Nachverarbeitungsskripts
+
+------------------------------------------------------------------------
+r94 | rose | 2006-08-10 18:06:51 +0200 (Do, 10 Aug 2006) | 6 lines
+
+Aufruf des Text Report Patch Skriptes nur wenn konfiguriert
+(conf->{txtpatchscript})
+
+bei Namenskollisionen auch .report.html erkennen (.report.1.html statt
+.report.html.1)
+
+------------------------------------------------------------------------
+r90 | rose | 2006-08-10 09:59:13 +0200 (Do, 10 Aug 2006) | 2 lines
+
+wenn über suffixremove => [ '.qxd', '.indd' ] konfiguriert, werden bei der
+Input Datei diese Suffixe vor dem bestehenbleibenden .pdf herausgenommen
+------------------------------------------------------------------------
+r89 | rose | 2006-08-09 16:26:40 +0200 (Mi, 09 Aug 2006) | 1 line
+
+Version wird als erstes in Logfile gespuckt
+------------------------------------------------------------------------
+r88 | rose | 2006-08-09 16:25:16 +0200 (Mi, 09 Aug 2006) | 1 line
+
+Id als Programmvariable
+------------------------------------------------------------------------
+r87 | rose | 2006-08-09 16:24:54 +0200 (Mi, 09 Aug 2006) | 1 line
+
+GNU General Public License
+------------------------------------------------------------------------
+r86 | rose | 2006-08-09 14:24:18 +0200 (Mi, 09 Aug 2006) | 6 lines
+
+Für Aufruf als notification script wird conf->{insubdir} auf 0 gesetzt, wenn
+die benutzte Queue Benutzerunterverzeichnisse verwendet. Dadurch landen auch
+die OK/ERROR Ausgaben im Benutzerunterordner
+
+Prüfung, ob ein benutztes PDF_CREATE_X3 Profil auch wirklich ein PDF/X-3
+Erzeugungsskript ist und Abbruch bei Fehler
+------------------------------------------------------------------------
+r85 | rose | 2006-08-08 15:17:15 +0200 (Di, 08 Aug 2006) | 2 lines
+
+Lock auf Eingabedatei blieb bestehen, wenn das tmpdir nicht schreibbar war
+(END{} Block hatte noch nicht alle notwendigen Variablen gesetzt)
+------------------------------------------------------------------------
+r84 | rose | 2006-08-08 14:40:55 +0200 (Di, 08 Aug 2006) | 12 lines
+
+Timeout Vorgabe auf 0, sonst bricht scriptsrv u.U. zu früh ab. Das Skript hat
+leider keine Chance mehr, darauf zu reagieren.
+
+bei Hotfolder Skripten wird bei nicht gesetzter PDF_PROFILE Umgebungsvariable
+im IN Ordner oder dem darüberliegenden Ordner nach einer .kfp Datei gesucht.
+Die erste gefundene wird benutzt mit Info in der Log Datei.
+
+optional über Konfigurationsvariable omittxtreport gesteuert werden die
+Text Report Dateien für die Benutzer weggelassen, allerdings intern noch
+benutzt, weil die Kommandozeilen Option hierfür einen Parameter benötigt
+
+
+------------------------------------------------------------------------
+r79 | rose | 2006-08-07 18:00:41 +0200 (Mo, 07 Aug 2006) | 1 line
+
+Ersetzung auf $infotext jetzt ok.
+------------------------------------------------------------------------
+r78 | rose | 2006-08-07 17:47:14 +0200 (Mo, 07 Aug 2006) | 1 line
+
+es wurden falsche Unterverzeichnisse benutzt, wenn insubdir auf 0 gesetzt war
+------------------------------------------------------------------------
+r75 | rose | 2006-08-07 15:46:30 +0200 (Mo, 07 Aug 2006) | 1 line
+
+vollstaendige Kommandozeile in Log Ausgabe auch fuer Report Erzeugung
+------------------------------------------------------------------------
+r62 | rose | 2006-07-12 14:08:24 +0200 (Mi, 12 Jul 2006) | 1 line
+
+Default Vorgabe fuer Helios Admin ab u0553; _ERROR.txt ueberschreibungssicher, Dateinamen mit Kommas nutzbar
+------------------------------------------------------------------------
+r60 | rose | 2006-07-04 16:58:13 +0200 (Di, 04 Jul 2006) | 1 line
+
+sauberer Abbruch bei fehlender PDF_PREFLIGHT Datei (Lock blieb bestehen)
+------------------------------------------------------------------------
+r56 | rose | 2006-07-04 15:50:31 +0200 (Di, 04 Jul 2006) | 1 line
+
+Umbenennung, Auslieferung
+------------------------------------------------------------------------
+r55 | rose | 2006-07-04 15:50:06 +0200 (Di, 04 Jul 2006) | 1 line
+
+
+------------------------------------------------------------------------
+r52 | rose | 2006-07-04 15:47:57 +0200 (Di, 04 Jul 2006) | 1 line
+
+Auslieferung 2
+------------------------------------------------------------------------
+r51 | rose | 2006-07-04 14:58:09 +0200 (Di, 04 Jul 2006) | 1 line
+
+keyword substition test auf Id
+------------------------------------------------------------------------
+r50 | rose | 2006-07-03 09:51:54 +0200 (Mo, 03 Jul 2006) | 1 line
+
+Zwischensicherung
+------------------------------------------------------------------------
+r47 | rose | 2006-06-22 13:09:12 +0200 (Do, 22 Jun 2006) | 1 line
+
+erste herausgegebene Version
+------------------------------------------------------------------------
+r39 | rose | 2006-05-16 11:13:03 +0200 (Di, 16 Mai 2006) | 1 line
+
+Zwischensicherung
+------------------------------------------------------------------------
+r27 | rose | 2006-05-04 17:40:02 +0200 (Do, 04 Mai 2006) | 1 line
+
+
+------------------------------------------------------------------------
