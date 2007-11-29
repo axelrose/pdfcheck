@@ -38,7 +38,7 @@ my $dt = $conf->{heliosdir} . "/bin/dt";
 my $prefvalue = $conf->{heliosdir} . "/bin/prefvalue";
 
 # save watched base dir of hotfolder scripts
-my $scriptpath = scriptpath( $0 ) if $ARGV[0];
+my $scriptpath = basename( $ARGV[0]) if $ARGV[0];
 
 # check for user specific configuration in IN folder
 modconf( $ARGV[0] ? dirname( $ARGV[0] ) : dirname( $ENV{HELIOS_VFFILE} ) );
@@ -156,9 +156,7 @@ else { # hotfolder
 my $inputsave = $input;
 
 unless( $profile ) {
-	$profile = $scriptpath
-	  ? findfile( [dirname($input), dirname($input) . '/..', $scriptpath], qr(\.kfp$) )
-	  : findfile( [dirname($input), dirname($input) . '/..'], qr(\.kfp$) );
+	$profile = findfile( [dirname($input), dirname($input) . '/..'], qr(\.kfp$) );
 	logit( "INFO - using hotfolder specific profile '$profile'" ) if $profile;
 }
 
@@ -450,9 +448,10 @@ sub profilelookup {
 	# TODO: escape regex tokens
 	if( $inp =~ /$pat/i ) {
 		my $key = lc $1;
+		$DEBUG && logit("DEBUG - key for profilelookup = '$key'");
 		$prof = $conf->{extlookup}{$key};
 		# if profile uses relative path
-		if( $prof !~ m|^/| ) {
+		if( $prof && $prof !~ m|^/| ) {
 			$prof = $conf->{heliosdir} . $pdfInspSettings . '/' . $prof;
 		}
 		logit( "WARNING - unsuccessful lookup for input '$inp' + matched suffix '$key'" ) unless $prof;
@@ -474,8 +473,9 @@ sub profkeytruncate {
 	my $key = shift || confess( "missing parameter to profkeytruncate()" );
 
 	(my( $base, $path, $suffix )) = fileparse( $input, '\.pdf$' );
-	$base && $base =~ s/${key}$//i;
+	$base && $base =~ s/${key}//i;
 	my $newname = $path . $base . $suffix;
+	$DEBUG && logit("DEBUG - profkeytruncate() moves '$input' to '$newname'");
 	system( $dt, "mv", $input, $newname ) && logit( "FATAL - move '$input' to '$newname' failed with $!", 1 );
 
 	return $newname;
@@ -617,21 +617,12 @@ sub namer {
 # check for modifcations of script configuration in input dir, parent input dir, script path dir
 sub modconf {
 	my $in = shift;
-
 	my $where = [$in, $in . '/..'];
 
-	# called as hotfolder script
-	if( $scriptpath ) {
-		# check base path of hotfolder script if input is in a deeper hierarchy
-		if( ! $queue && ( $in ne $scriptpath || realpath( $in . '/..' ) ne $scriptpath ) ) {
-			# priority for scriptpath conf.pl file
-			unshift( @$where, $scriptpath );
-		}
-	}
-
-    my $conffile = findfile( $where, qr(\.conf.pl$) );
+	my $conffile = findfile( $where, qr(\.conf.pl$) );
 	return unless $conffile;
 	logit( "INFO - processing extra configuration file '$conffile'" );
+
 	my $c = do $conffile;
 	die "FATAL: parse error in '$conffile'\n$@" if $@;
 	for my $ckey (keys %$c) {
@@ -704,30 +695,6 @@ sub logfile {
 	close LOGF;
 
 	mover( $tmplog, dirname( $file ) );
-}
-
-# return path of hotfolder scripts
-# in: absolute path or path relative to Helios base dir
-# out: absolute path value of watched directory
-# assert: heliosdir must not end with trailing '/'
-sub scriptpath {
-	my $p = shift || confess( "FATAL: no parameter to scriptpath()" );
-	$p = $conf->{heliosdir} . '/' . $p unless $p =~ m|^/|;
-
-	my @scripts = split( /\n/s, `$prefvalue -k Programs/scriptsrv/Config -l` );
-	for my $script ( @scripts ) {
-		chomp( $script );
-		chomp( my $scriptpath = `$prefvalue -k Programs/scriptsrv/Config/\Q$script\E/Script` );
-		$scriptpath = $conf->{heliosdir} . '/' . $scriptpath unless $scriptpath =~ m|^/|;
-		if( $p eq $scriptpath ) {
-			chomp( my $path = `$prefvalue -k Programs/scriptsrv/Config/\Q$script\E/Path` );
-			# Helios liefert aus "prefvalue" heraus KEIN UTF-8 ! (support@helios.de)
-			$path =~ s/\\([0-9]{3})/chr(oct($1))/eg;
-			$DEBUG && logit( "DEBUG - scriptpath() found path '$path' for script '$p'" );
-			return $path;
-		}
-	}
-	logit( "WARNING - internal error: path of script '$p' could not be found!" );
 }
 
 sub recursivescript {

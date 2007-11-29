@@ -159,7 +159,9 @@ defaultprofile => '',
 # or use Perl regex profileext1 + profileext2
 # match of profileext1 will be used as key entry into extlookup table below
 # note that suffix removal is applied first
-# profileext1 => '4c|tz',
+# pattern is used case-insensitive
+# profileext1 => '(4c|tz).*', # use "4c" or "tz" as search pattern and key into table "extlookup", matches "foo_4c.pdf" and "foo_4c_bar.pdf"
+# profileext1 => '4c|tz', # use "4c" or "tz" as search pattern and key into table "extlookup", matches "foo_4c.pdf" but not "foo_4c_bar.pdf"
 # file names must end with:
 # leave empty to use default = '(\.pdf)*$'
 # profileext2 => '(\.pdf)*$',
@@ -168,11 +170,12 @@ defaultprofile => '',
 # only effecitve if profileext1 und extlookup is set
 profkeyremove => 1,
 
-# lookuptable for filename profile recognition, use lower-case keys
-# leave empty to disable
+# lookuptable for filename profile recognition
+# won't be used if "profileext1" is empty
 # extlookup => '',
 # or use hash reference { key => path_to_profile }
 # path may be absolute, otherwise relative to HELIOSDIR/var/settings/PDF Preflight
+# use lower-case keys!
 extlookup => {
 	'4c' => 'Proof Profiles/Defaults/pdfx-profiles/Create PDF_X-3 (OutputIntent_ ISO Coated).kfp',
 	'tz' => 'Digital/sj-tz+x3.kfp',
