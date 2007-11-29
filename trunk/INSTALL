@@ -39,7 +39,7 @@ nur in den überwachten Eingabeordner kopiert zu werden.
 Neben den üblichen CreatePDF Einstellungen ist wichtig:
 Benachrichtigungsprogramm = pdfcheck.pl
 PDF Preflight Profil = passendes Profile aus Acrobat Preflight
-Wird das Profil ausgelassen, gelten die Auswahlregeln unter 5.
+Wird das Profil ausgelassen, gelten die Auswahlregeln unter 4.
 
 Bitte bei den Distiller-Einstellungen vermeiden, daß der Distiller
 bereits eine PDF/X-3 erzeugt (kann pdfInspektor3 selber).
