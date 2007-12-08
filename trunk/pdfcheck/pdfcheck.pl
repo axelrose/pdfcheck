@@ -5,7 +5,7 @@
 eval 'read HELIOSDIR < /etc/HELIOSInstallPath ;
 	exec "$HELIOSDIR"/var/run/runperl -x -S "$0" ${1+"$@"}'
 	if $running_under_some_shell;
-#!perl -w
+#!perl -w -d
 $running_under_some_shell = $running_under_some_shell = 0; # silence warnings
 #line 11
 
@@ -38,7 +38,7 @@ my $dt = $conf->{heliosdir} . "/bin/dt";
 my $prefvalue = $conf->{heliosdir} . "/bin/prefvalue";
 
 # save watched base dir of hotfolder scripts
-my $scriptpath = basename( $ARGV[0]) if $ARGV[0];
+my $scriptpath = dirname( $ARGV[0]) if $ARGV[0];
 
 # check for user specific configuration in IN folder
 modconf( $ARGV[0] ? dirname( $ARGV[0] ) : dirname( $ENV{HELIOS_VFFILE} ) );
