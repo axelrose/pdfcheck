@@ -36,7 +36,7 @@ my $dt = $conf->{heliosdir} . "/bin/dt";
 my $prefvalue = $conf->{heliosdir} . "/bin/prefvalue";
 
 # save watched base dir of hotfolder scripts
-my $scriptpath = basename( $ARGV[0]) if $ARGV[0];
+my $scriptpath = dirname( $ARGV[0]) if $ARGV[0];
 
 # check for user specific configuration in IN folder
 modconf( $ARGV[0] ? dirname( $ARGV[0] ) : dirname( $ENV{HELIOS_VFFILE} ) );
