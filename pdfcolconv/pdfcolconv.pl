@@ -236,7 +236,7 @@ logfile( $infofile, logtext( $conf->{infotext} ) );
 ### the real work is done here ###
 
 my $ret;
-my $cmd = $pdfcolconv . " " . $conf->{pdfcolconvopt} . " \Q$profile\E \Q$input\E \Q$output\E" . ( $remote ? "'" : "" );
+my $cmd = $pdfcolconv . " " . $conf->{pdfcolconvopt} . myquote(" " . $profile . " " . $input . " " . $output ) . ( $remote ? "'" : "" );
 logit("INFO - executing convert command:\n$cmd");
 my $result = "";
 my $outStr = "";
@@ -728,6 +728,14 @@ sub logfile {
     close LOGF;
 
     mover( $tmplog, dirname($file) );
+}
+
+sub myquote {
+	# do not escape those characters
+	# escaping of UTF-8 characters (bytes > \x7F) seems to be problematic
+	# if standard mechanism \Q$cmd\E is used
+	(my $s = $_[0] ) =~ s/([^A-Za-z_0-9.%\-\/\x80-\xff])/\\$1/g;
+	return $s;
 }
 
 sub logit {
