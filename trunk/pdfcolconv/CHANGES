@@ -1,3 +1,8 @@
+r23 | axel.roeslein | 2007-12-09
+------------------------------------------------------------------------
+Fix: input files containing non-ASCII characters were not processed properly
+     under non MacOS X platforms
+
 r22 | axel.roeslein | 2007-12-08
 ------------------------------------------------------------------------
 Fix: scriptpath for checking recursivness was still not ok
