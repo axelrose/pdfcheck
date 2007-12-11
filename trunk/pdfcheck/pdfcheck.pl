@@ -5,7 +5,7 @@
 eval 'read HELIOSDIR < /etc/HELIOSInstallPath ;
 	exec "$HELIOSDIR"/var/run/runperl -x -S "$0" ${1+"$@"}'
 	if $running_under_some_shell;
-#!perl -w -d
+#!perl -w
 $running_under_some_shell = $running_under_some_shell = 0; # silence warnings
 #line 11
 
