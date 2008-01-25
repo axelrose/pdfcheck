@@ -36,7 +36,7 @@ my $dt = $conf->{heliosdir} . "/bin/dt";
 my $prefvalue = $conf->{heliosdir} . "/bin/prefvalue";
 
 # save watched base dir of hotfolder scripts
-my $scriptpath = scriptpath( $0 ) if $ARGV[0];
+my $scriptpath = dirname( $ARGV[0]) if $ARGV[0];
 
 # check for user specific configuration in IN folder
 modconf( $ARGV[0] ? dirname( $ARGV[0] ) : dirname( $ENV{HELIOS_VFFILE} ) );
@@ -237,7 +237,8 @@ logfile( $infofile, logtext( $conf->{infotext} ) );
 ### the real work is done here ###
 
 my $ret;
-my $cmd = $pdfcorr . " " . $conf->{pdfcorropt} . " \Q$profile\E \Q$input\E \Q$output\E" . ( $remote ? "'" : "" );
+my $cmd = $pdfcorr . " " . $conf->{pdfcorropt} . myquote(" " . $profile . " " . $input . " " . $output ) . ( $remote ? "'" : "" );
+
 logit("INFO - executing convert command:\n$cmd");
 my $result = "";
 my $outStr = "";
@@ -584,28 +585,6 @@ sub realpath {
 	return $pwd;
 }
 
-# return path of hotfolder scripts
-# in: absolute path or path relative to Helios base dir
-# out: absolute path value of watched directory
-# assert: heliosdir must not end with trailing '/'
-sub scriptpath {
-	my $p = shift || confess( "FATAL: no parameter to scriptpath()" );
-	$p = $conf->{heliosdir} . '/' . $p unless $p =~ m|^/|;
-
-	my @scripts = split( /\n/s, `$prefvalue -k Programs/scriptsrv/Config -l` );
-	for my $script ( @scripts ) {
-		chomp( $script );
-		chomp( my $scriptpath = `$prefvalue -k Programs/scriptsrv/Config/\Q$script\E/Script` );
-		$scriptpath = $conf->{heliosdir} . '/' . $scriptpath unless $scriptpath =~ m|^/|;
-		if( $p eq $scriptpath ) {
-			chomp( my $path = `$prefvalue -k Programs/scriptsrv/Config/\Q$script\E/Path` );
-			$DEBUG && logit( "DEBUG - scriptpath() found path '$path' for script '$p'" );
-			return $path;
-		}
-	}
-	logit( "DEBUG - internal error: path of script '$p' could not be found!" );
-}
-
 sub recursivescript {
 	my $testpath = shift || confess( "INTERNAL ERROR - no parameter to recursivescript()" );
 	# return cached result
@@ -758,6 +737,14 @@ sub logfile {
     close LOGF;
 
     mover( $tmplog, dirname($file) );
+}
+
+sub myquote {
+    # do not escape those characters
+    # escaping of UTF-8 characters (bytes > \x7F) seems to be problematic
+    # if standard mechanism \Q$cmd\E is used
+    (my $s = $_[0] ) =~ s/([^A-Za-z_0-9.%\-\/\x80-\xff])/\\$1/g;
+    return $s;
 }
 
 sub logit {
