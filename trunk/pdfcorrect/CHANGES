@@ -1,0 +1,5 @@
+2008-01-25
+------------------------------------------------------------------------
+Fix: input files containing non-ASCII characters were not processed properly
+     under non MacOS X platforms
+Fix: scriptpath for checking recursivness was still not ok
